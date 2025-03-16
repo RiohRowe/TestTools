@@ -1,0 +1,6 @@
+FileName	 Path ERT/Reject/Accept	MrjContainsDesciptions	MrjContainsErrorCodes	Test Description
+TXDPS_CAR_1	Critical	EH segment not found	R120	EH BLANK
+TXDPS_CAR_2	Critical	EH segment not found	R120	EH BLANK
+TXDPS_CAR_3	Critical	EH segment not found	R120	EH BLANK
+				
+				

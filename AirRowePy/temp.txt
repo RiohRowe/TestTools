@@ -1,0 +1,204 @@
+EHN_MKE
+    dataType: accept alphanumeric and special values
+    value length must be 4
+    notBlank
+    startsWith": "EHN"
+    notEquals": "EHN"
+
+EHN_ERR
+    dataType: accept alphabetical values only
+    value length must be 1
+
+EHN_LGH
+    dataType: accept numbers only
+    notBlank
+    equals: "0358"
+    value length must be 4
+
+EHN_DOE
+    dataType: accept numbers only
+    value length must be 8
+    dateFormat: "yyyyMMdd"
+    notBlank
+
+EHN_ORG
+    dataType: accept alphanumeric values only
+    value length must be 4
+    notBlank
+    value must exist in "ORG" database table
+
+EHN_OPR
+    In All Cases
+      dataType: accept alphanumeric values only
+      value length must be 6
+    For EAR TOTs
+      notBlank
+
+EHN_DES
+    In All Cases
+      dataType: accept alphanumeric values only
+      value length must be 9
+    For EAR TOTs
+      notBlank
+
+EHN_DPS
+    dataType: accept numbers only
+    value length must be 8
+    notBlank
+
+EHN_AKA1
+    dataType: accept alphabetical and special characters only
+    value length must be 30
+    notBlank
+    startsWithChar: [a-zA-Z]
+    endsWithChar: [a-zA-Z]
+
+EHN_AKA2
+    dataType: accept alphabetical and special characters only
+    value length must be 30
+    notBlank
+    startsWithChar: [a-zA-Z]
+    endsWithChar: [a-zA-Z]
+
+EHN_AKA3
+    dataType: accept alphabetical and special characters only
+    value length must be 30
+    notBlank
+    startsWithChar: [a-zA-Z]
+    endsWithChar: [a-zA-Z]
+
+EHN_AKA4
+    dataType: accept alphabetical and special characters only
+    value length must be 30
+    notBlank
+    startsWithChar: [a-zA-Z]
+    endsWithChar: [a-zA-Z]
+
+EHN_SMT1
+    dataType: accept alphabetical and special characters only
+    value length must be 10
+    value must exist in "SMT" database table
+
+
+EHN_SMT2
+    dataType: accept alphabetical and special characters only
+    value length must be 10
+    value must exist in "SMT" database table
+
+EHN_SMT3
+    dataType: accept alphabetical and special characters only
+    value length must be 10
+    value must exist in "SMT" database table
+
+EHN_ADB1
+    dataType: accept numbers only
+    value length must be 8
+    dateFormat": "MMddyyyy"
+
+EHN_ADB2
+    dataType: accept numbers only
+    value length must be 8
+    dateFormat": "MMddyyyy"
+
+EHN_MNU1
+    dataType: accept alphanumeric and special values
+    value length must be 15
+
+EHN_MNU2
+    dataType: accept alphanumeric and special values
+    value length must be 15
+
+EHN_SOC
+    dataType: accept numbers only
+    value length must be 9
+
+EHN_TRN
+    In All Cases
+      dataType: accept alphanumeric values only
+      value length must be 10
+      last char must be number or 'X'
+    For EAR TOTs
+      notBlank
+
+EHN_OCA
+    In All Cases
+      dataType: accept alphanumeric and special values
+      value length must be 12
+    For EAR TOTs
+      notBlank
+
+EHN_ORIA
+    In All Cases
+      dataType: accept alphanumeric and special values
+      value length must be 9
+    For EAR TOTs
+      notBlank
+
+EHN_MISC
+    dataType: accept alphanumeric and special values
+    length: 69
+
+
+
+ADDITIONAL RULES REQUIRED:
+
+EHN_MNU1 (MNU 1-2)
+    length must be longer than 4
+    3rd char must be '-'
+    Value must start with "SB-" When 4th MKE char is 'A'
+    Value must start with "SR-" When 4th MKE char is 'S'
+    Value must start with "CH-" When 4th MKE char is 'W'
+    Value after 3rd char is AlphaNumeric
+
+EHN_SOC
+    4th and 5th char can't both be 0
+    can't be less than 0010010001
+
+EHN_TRN
+    In All Cases
+      first 9 chars are non-numbers
+      CheckDigit must be 11-remainder(for digitPos 1-9, Sum of(digit * (11-digitpos))/11) or 'X' if 11
+
+
+EHN_AKA1 (1-4)
+      "validationRules": [
+        {"dataType": "A,S", "params": {"sev": "1", "code": "501"}},
+        {"fbiFullName": "", "params": {"sev": "1", "code": "501"}}
+
+
+
+
+
+
+
+
+
+
+
+ID_ = '750966648' OR PROC_INST_ID_ = '750966648' OR EXECUTION_ID_ = '750966648' OR TASK_ID_ = '750966648' OR NAME_ = '750966648' OR VAR_TYPE_ = '750966648' OR REV_ = '750966648' OR BYTEARRAY_ID_ = '750966648' OR DOUBLE_ = '750966648' OR LONG_ = '750966648' OR TEXT_ = '750966648' OR TEXT2_ = '750966648' OR CREATE_TIME_ = '750966648' OR LAST_UPDATED_TIME_ = '750966648' OR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

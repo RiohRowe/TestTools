@@ -1,0 +1,1176 @@
+Date	Name	Location	Amount
+11/25/2020	Dave(DecRent)+Deposit	Phoenix Arizona	1225.00
+12/5/2020	CenturyLink	Phoenix Arizona	65.22
+12/18/2020	Dollar Tree	Phoenix Arizona	4.13
+12/18/2020	Safeway	Phoenix Arizona	26.22
+12/18/2020	Frys	Phoenix Arizona	27.90
+12/20/2020	Dollar Tree	Phoenix Arizona	5.09
+12/20/2020	Dave(JanRent)	Phoenix Arizona	725.00
+12/26/2020	Circle K	Phoenix Arizona	45.10
+12/26/2020	AutoZone	Phoenix Arizona	237.80
+12/27/2020	Dollar Tree	Phoenix Arizona	3.24
+12/27/2020	Dollar Tree	Phoenix Arizona	5.21
+12/27/2020	Frys	Phoenix Arizona	9.43
+12/31/2020	Frys	Phoenix Arizona	4.66
+12/31/2020	Walmart	Phoenix Arizona	48.03
+1/5/2021	SWGas	Phoenix Arizona	80.00
+1/9/2021	Dollar Tree	Phoenix Arizona	3.05
+1/9/2021	Frys	Phoenix Arizona	6.10
+1/9/2021	Walmart	Phoenix Arizona	47.68
+1/9/2021	APS(Power)	Phoenix Arizona	305.25
+1/10/2021	Walmart	Phoenix Arizona	3.65
+1/12/2021	CenturyLink	Phoenix Arizona	65.22
+1/16/2021	Frys	Phoenix Arizona	6.09
+1/16/2021	99CentStore	Phoenix Arizona	8.57
+1/16/2021	Walmart	Phoenix Arizona	25.68
+1/17/2021	Walmart	Phoenix Arizona	5.57
+1/17/2021	99CentStore	Phoenix Arizona	9.51
+1/22/2021	Dollar Tree	Phoenix Arizona	7.31
+1/22/2021	Frys	Phoenix Arizona	7.97
+1/22/2021	Walmart	Phoenix Arizona	25.26
+1/22/2021	Dave(FebRent)	Phoenix Arizona	725.00
+1/26/2021	SWGas	Phoenix Arizona	67.94
+1/29/2021	PandaExpress	Phoenix Arizona	8.86
+1/29/2021	Frys	Phoenix Arizona	17.36
+1/29/2021	Walmart	Phoenix Arizona	31.29
+1/31/2021	Dollar Tree	Phoenix Arizona	3.12
+1/31/2021	Dollar Tree	Phoenix Arizona	3.24
+1/31/2021	Staples	Phoenix Arizona	4.31
+1/31/2021	Taco Bell	Phoenix Arizona	5.93
+2/5/2021	99CentStore	Phoenix Arizona	6.11
+2/5/2021	Walmart	Phoenix Arizona	39.28
+2/5/2021	Frys	Phoenix Arizona	4.66
+2/6/2021	APS(Power)	Phoenix Arizona	30.94
+2/6/2021	Chevron	Phoenix Arizona	37.00
+2/6/2021	MissionPalmsLot	Phoenix Arizona	3.00
+2/6/2021	PandaExpress	Phoenix Arizona	13.84
+2/7/2021	HarkinsTheatre	Phoenix Arizona	25.00
+2/7/2021	ModeWorl	Phoenix Arizona	97.27
+2/7/2021	Olive Garden	Phoenix Arizona	34.01
+2/10/2021	KFC	Phoenix Arizona	15.44
+2/12/2021	CenturyLink	Phoenix Arizona	65.22
+2/13/2021	Dollar Tree	Phoenix Arizona	5.21
+2/13/2021	Frys	Phoenix Arizona	19.15
+2/13/2021	Walmart	Phoenix Arizona	43.00
+2/18/2021	Chevron	Phoenix Arizona	39.00
+2/20/2021	Dairy Queen	Phoenix Arizona	8.13
+2/20/2021	Walmart	Phoenix Arizona	35.36
+2/20/2021	Frys	Phoenix Arizona	14.45
+2/21/2021	Walgreens	Phoenix Arizona	16.20
+2/21/2021	SmoLing	Phoenix Arizona	78.05
+2/21/2021	Dollar Tree	Phoenix Arizona	5.09
+2/21/2021	Walmart	Phoenix Arizona	44.32
+2/21/2021	Walmart	Phoenix Arizona	13.68
+2/23/2021	Apollo Cleaners	Phoenix Arizona	26.50
+2/27/2021	Walmart	Phoenix Arizona	38.95
+2/27/2021	Frys	Phoenix Arizona	9.13
+2/27/2021	99CentStore	Phoenix Arizona	4.79
+2/27/2021	Dollar Tree	Phoenix Arizona	5.09
+2/27/2021	Frys	Phoenix Arizona	4.12
+2/27/2021	Dave(MarRent)	Phoenix Arizona	725.00
+3/2/2021	SWGas	Phoenix Arizona	24.69
+3/3/2021	ModeWorl	Phoenix Arizona	36.74
+3/5/2021	AmericanFivestar	Phoenix Arizona	1139.17
+3/5/2021	Food City	Phoenix Arizona	5.49
+3/5/2021	99CentStore	Phoenix Arizona	5.09
+3/5/2021	Frys	Phoenix Arizona	6.09
+3/6/2021	Dunkin Donuts	Phoenix Arizona	6.12
+3/6/2021	Dunkin Donuts	Phoenix Arizona	5.68
+3/7/2021	Dollar Tree	Phoenix Arizona	3.24
+3/7/2021	Chevron	Phoenix Arizona	58.55
+3/7/2021	Walmart	Phoenix Arizona	20.95
+3/12/2021	Frys	Phoenix Arizona	12.52
+3/12/2021	Walmart	Phoenix Arizona	25.50
+3/12/2021	99CentStore	Phoenix Arizona	9.15
+3/12/2021	CenturyLink	Phoenix Arizona	65.22
+3/13/2021	APS(Power)	Phoenix Arizona	31.10
+3/14/2021	Walmart	Phoenix Arizona	6.96
+3/14/2021	Walmart	Phoenix Arizona	4.21
+3/14/2021	99CentStore	Phoenix Arizona	2.16
+3/16/2021	PandaExpress	Phoenix Arizona	11.03
+3/16/2021	AmericanFivestar	Phoenix Arizona	1400.84
+3/16/2021	SWGas	Phoenix Arizona	27.62
+3/19/2021	Frys	Phoenix Arizona	6.09
+3/19/2021	Walmart	Phoenix Arizona	50.38
+3/20/2021	Frys	Phoenix Arizona	3.24
+3/21/2021	Dave(AprRent)	Phoenix Arizona	725.00
+3/21/2021	Walmart	Phoenix Arizona	1.48
+3/21/2021	99CentStore	Phoenix Arizona	6.11
+3/26/2021	Frys	Phoenix Arizona	6.09
+3/26/2021	Walmart	Phoenix Arizona	134.98
+3/26/2021	99CentStore	Phoenix Arizona	3.05
+3/26/2021	Frys	Phoenix Arizona	3.09
+3/27/2021	Taco Bell	Phoenix Arizona	5.93
+3/27/2021	99CentStore	Phoenix Arizona	5.39
+3/27/2021	Dollar Tree	Phoenix Arizona	6.49
+3/31/2021	Walmart	Phoenix Arizona	36.81
+3/31/2021	99CentStore	Phoenix Arizona	2.04
+3/31/2021	Frys	Phoenix Arizona	21.31
+3/31/2021	GoodWill	Phoenix Arizona	2.98
+3/31/2021	Target	Phoenix Arizona	21.61
+3/31/2021	Dollar Tree	Phoenix Arizona	4.20
+4/3/2021	PandaExpress	Phoenix Arizona	11.03
+4/3/2021	Walmart	Phoenix Arizona	22.60
+4/3/2021	Sprouts	Phoenix Arizona	20.35
+4/3/2021	Arco Gasoline	Phoenix Arizona	46.35
+4/9/2021	Walmart	Phoenix Arizona	54.09
+4/9/2021	Frys	Phoenix Arizona	9.11
+4/10/2021	APS(Power)	Phoenix Arizona	35.10
+4/11/2021	FatCats	Phoenix Arizona	28.05
+4/11/2021	Walmart	Phoenix Arizona	1.48
+4/11/2021	FatCats	Phoenix Arizona	4.85
+4/12/2021	CenturyLink	Phoenix Arizona	65.22
+4/13/2021	PandaExpress	Phoenix Arizona	11.24
+4/13/2021	Walmart	Phoenix Arizona	18.55
+4/16/2021	Walmart	Phoenix Arizona	1.18
+4/16/2021	99CentStore	Phoenix Arizona	1.02
+4/16/2021	Dollar Tree	Phoenix Arizona	6.17
+4/16/2021	Dave(MayRent)	Phoenix Arizona	725.00
+4/17/2021	JackInTheBox	Phoenix Arizona	7.36
+4/18/2021	Osaka	Phoenix Arizona	65.00
+4/18/2021	Chevron	Phoenix Arizona	36.10
+4/19/2021	SWGas	Phoenix Arizona	26.81
+4/24/2021	99CentStore	Phoenix Arizona	11.69
+4/24/2021	Walmart	Phoenix Arizona	18.44
+4/25/2021	RainbowDonuts	Phoenix Arizona	11.31
+4/30/2021	Walmart	Phoenix Arizona	98.02
+5/1/2021	Imagine3D	Phoenix Arizona	35.49
+5/1/2021	PandaExpress	Phoenix Arizona	7.24
+5/2/2021	Dollar Tree	Phoenix Arizona	5.09
+5/7/2021	Walmart	Phoenix Arizona	38.20
+5/7/2021	Frys	Phoenix Arizona	10.74
+5/7/2021	99CentStore	Phoenix Arizona	5.08
+5/7/2021	Reynolds	Phoenix Arizona	34.83
+5/7/2021	Walmart	Phoenix Arizona	1.58
+5/8/2021	APS(Power)	Phoenix Arizona	33.86
+5/12/2021	CenturyLink	Phoenix Arizona	65.22
+5/14/2021	Chevron	Phoenix Arizona	62.00
+5/14/2021	Walmart	Phoenix Arizona	14.58
+5/14/2021	99CentStore	Phoenix Arizona	3.05
+5/14/2021	Dollar Tree	Phoenix Arizona	4.13
+5/14/2021	Safeway	Phoenix Arizona	5.08
+5/14/2021	PandaExpress	Phoenix Arizona	8.86
+5/15/2021	AutoZone	Phoenix Arizona	5.40
+5/16/2021	Dave(JunRent)	Phoenix Arizona	725.00
+5/21/2021	Dollar Tree	Phoenix Arizona	4.07
+5/21/2021	Frys	Phoenix Arizona	4.90
+5/21/2021	Walmart	Phoenix Arizona	47.77
+5/21/2021	99CentStore	Phoenix Arizona	9.87
+5/21/2021	99CentStore	Phoenix Arizona	3.05
+5/23/2021	SWGas	Phoenix Arizona	23.68
+5/26/2021	T-Mobile	Phoenix Arizona	20.00
+5/29/2021	Dollar Tree	Phoenix Arizona	6.23
+5/29/2021	Walmart	Phoenix Arizona	46.64
+5/29/2021	InNOut	Phoenix Arizona	19.08
+5/30/2021	Little Caesars	Phoenix Arizona	11.48
+5/30/2021	Dunkin Donuts	Phoenix Arizona	5.15
+5/31/2021	GoodWill	Phoenix Arizona	2.49
+5/31/2021	Walmart	Phoenix Arizona	11.19
+5/31/2021	Staples	Phoenix Arizona	154.55
+5/31/2021	ModeWorl	Phoenix Arizona	42.14
+6/5/2021	Staples	Phoenix Arizona	14.04
+6/5/2021	Dollar Tree	Phoenix Arizona	5.15
+6/5/2021	Frys	Phoenix Arizona	9.36
+6/5/2021	Walmart	Phoenix Arizona	25.64
+6/8/2021	Walmart	Phoenix Arizona	6.83
+6/8/2021	99CentStore	Phoenix Arizona	3.77
+6/11/2021	99CentStore	Phoenix Arizona	6.22
+6/11/2021	Walmart	Phoenix Arizona	36.56
+6/11/2021	Arco Gasoline	Phoenix Arizona	47.00
+6/11/2021	GoodWill	Phoenix Arizona	3.49
+6/12/2021	Walmart	Phoenix Arizona	5.15
+6/12/2021	CenturyLink	Phoenix Arizona	65.22
+6/13/2021	APS(Power)	Phoenix Arizona	45.71
+6/13/2021	Staples	Phoenix Arizona	1.78
+6/14/2021	PandaExpress	Phoenix Arizona	8.51
+6/14/2021	SWGas	Phoenix Arizona	20.86
+6/16/2021	Walmart	Phoenix Arizona	32.00
+6/16/2021	CenturyLink	Phoenix Arizona	216.20
+6/16/2021	Dave(JulRent)	Phoenix Arizona	725.00
+6/18/2021	Walmart	Phoenix Arizona	22.30
+6/18/2021	Frys	Phoenix Arizona	7.67
+6/18/2021	Dollar Tree	Phoenix Arizona	8.33
+6/19/2021	GolfLand	Phoenix Arizona	15.49
+6/19/2021	GolfLand	Phoenix Arizona	8.93
+6/20/2021	JimmyJohns	Phoenix Arizona	22.00
+6/21/2021	USPS	Phoenix Arizona	12.80
+6/25/2021	99CentStore	Phoenix Arizona	4.07
+6/25/2021	Walmart	Phoenix Arizona	49.97
+6/26/2021	Walmart	Phoenix Arizona	26.94
+6/26/2021	T-Mobile	Phoenix Arizona	20.00
+6/29/2021	Staples	Phoenix Arizona	30.25
+6/30/2021	Dunkin Donuts	Phoenix Arizona	3.22
+7/2/2021	99CentStore	Phoenix Arizona	5.09
+7/2/2021	Frys	Phoenix Arizona	10.36
+7/2/2021	Walmart	Phoenix Arizona	51.26
+7/3/2021	Dunkin Donuts	Phoenix Arizona	5.80
+7/3/2021	Subway	Phoenix Arizona	17.27
+7/3/2021	Walmart	Phoenix Arizona	2.66
+7/3/2021	GolfLand	Phoenix Arizona	15.49
+7/3/2021	GolfLand	Phoenix Arizona	20.00
+7/4/2021	GoodWill	Phoenix Arizona	1.49
+7/4/2021	Frys	Phoenix Arizona	6.83
+7/9/2021	99CentStore	Phoenix Arizona	9.03
+7/9/2021	99CentStore	Phoenix Arizona	5.09
+7/9/2021	Walmart	Phoenix Arizona	19.37
+7/11/2021	Chevron	Phoenix Arizona	55.20
+7/11/2021	Taco Bell	Phoenix Arizona	5.42
+7/12/2021	APS(Power)	Phoenix Arizona	106.14
+7/14/2021	ModeWorl	Phoenix Arizona	23.77
+7/16/2021	99CentStore	Phoenix Arizona	5.09
+7/16/2021	Walmart	Phoenix Arizona	15.50
+7/16/2021	Frys	Phoenix Arizona	8.13
+7/17/2021	ModeWorl	Phoenix Arizona	29.18
+7/17/2021	CenturyLink	Phoenix Arizona	49.00
+7/17/2021	Dave(AugRent)	Phoenix Arizona	725.00
+7/23/2021	Walmart	Phoenix Arizona	20.46
+7/23/2021	99CentStore	Phoenix Arizona	5.09
+7/23/2021	Los Reyes De La Torta	Phoenix Arizona	16.00
+7/23/2021	SWGas	Phoenix Arizona	16.48
+7/25/2021	99CentStore	Phoenix Arizona	2.16
+7/25/2021	PandaExpress	Phoenix Arizona	8.86
+7/25/2021	Walmart	Phoenix Arizona	33.30
+7/26/2021	Walmart	Phoenix Arizona	13.43
+7/26/2021	SWGas	Phoenix Arizona	16.48
+7/26/2021	T-Mobile	Phoenix Arizona	20.00
+7/30/2021	99CentStore	Phoenix Arizona	3.12
+7/31/2021	UPS Store	Phoenix Arizona	22.06
+7/31/2021	DeLa	Phoenix Arizona	49.18
+7/31/2021	99CentStore	Phoenix Arizona	3.05
+7/31/2021	Walmart	Phoenix Arizona	38.90
+7/31/2021	Frys	Phoenix Arizona	4.14
+8/6/2021	PandaExpress	Phoenix Arizona	11.24
+8/6/2021	99CentStore	Phoenix Arizona	5.09
+8/6/2021	Walmart	Phoenix Arizona	33.13
+8/6/2021	APS(Power)	Phoenix Arizona	95.70
+8/7/2021	Shell	Phoenix Arizona	43.00
+8/8/2021	Walmart	Phoenix Arizona	11.95
+8/11/2021	AmericanFivestar	Phoenix Arizona	357.31
+8/13/2021	99CentStore	Phoenix Arizona	5.09
+8/13/2021	Walmart	Phoenix Arizona	48.79
+8/14/2021	TotalElement	Phoenix Arizona	19.99
+8/15/2021	Chipotle	Phoenix Arizona	10.97
+8/15/2021	Walmart	Phoenix Arizona	33.74
+8/15/2021	Frys	Phoenix Arizona	6.09
+8/15/2021	Dollar Tree	Phoenix Arizona	2.16
+8/16/2021	SWGas	Phoenix Arizona	16.54
+8/17/2021	CenturyLink	Phoenix Arizona	49.00
+8/17/2021	Dave(SepRent)	Phoenix Arizona	725.00
+8/20/2021	Walmart	Phoenix Arizona	38.46
+8/20/2021	99CentStore	Phoenix Arizona	13.18
+8/20/2021	Frys	Phoenix Arizona	14.55
+8/21/2021	McDonalds	Phoenix Arizona	4.37
+8/22/2021	GolfLand	Phoenix Arizona	23.23
+8/22/2021	GolfLand	Phoenix Arizona	155.47
+8/26/2021	LoPl	Phoenix Arizona	31.09
+8/26/2021	T-Mobile	Phoenix Arizona	20.00
+8/27/2021	99CentStore	Phoenix Arizona	5.09
+8/27/2021	Walmart	Phoenix Arizona	27.98
+8/27/2021	Frys	Phoenix Arizona	9.15
+8/29/2021	Walmart	Phoenix Arizona	6.66
+9/3/2021	99CentStore	Phoenix Arizona	5.09
+9/3/2021	Walmart	Phoenix Arizona	58.47
+9/4/2021	Chevron	Phoenix Arizona	40.00
+9/5/2021	FatCats	Phoenix Arizona	11.32
+9/5/2021	SUBSCRIBESTAR	Phoenix Arizona	3.00
+9/5/2021	Taco Bell	Phoenix Arizona	5.95
+9/6/2021	Chipotle	Phoenix Arizona	8.92
+9/7/2021	APS(Power)	Phoenix Arizona	80.88
+9/10/2021	PandaExpress	Phoenix Arizona	11.24
+9/10/2021	Frys	Phoenix Arizona	8.79
+9/10/2021	Walmart	Phoenix Arizona	30.46
+9/10/2021	99CentStore	Phoenix Arizona	5.09
+9/17/2021	CenturyLink	Phoenix Arizona	49.00
+9/17/2021	Walmart	Phoenix Arizona	34.10
+9/17/2021	99CentStore	Phoenix Arizona	5.09
+9/17/2021	Ebay	Phoenix Arizona	18.53
+9/18/2021	SkateLand	Phoenix Arizona	23.68
+9/18/2021	Walmart	Phoenix Arizona	5.86
+9/18/2021	DKC DIGI KEY CORP	Phoenix Arizona	16.73
+9/24/2021	FatCats	Phoenix Arizona	22.64
+9/24/2021	FatCats	Phoenix Arizona	5.66
+9/24/2021	Imagine3D	Phoenix Arizona	23.60
+9/24/2021	Dave(OctRent)	Phoenix Arizona	725.00
+9/25/2021	PandaExpress	Phoenix Arizona	11.24
+9/25/2021	Walmart	Phoenix Arizona	1.48
+9/25/2021	Frys	Phoenix Arizona	6.78
+9/25/2021	Walmart	Phoenix Arizona	35.40
+9/25/2021	99CentStore	Phoenix Arizona	7.25
+9/26/2021	T-Mobile	Phoenix Arizona	20.00
+10/1/2021	Walmart	Phoenix Arizona	3.05
+10/1/2021	Walmart	Phoenix Arizona	43.89
+10/1/2021	99CentStore	Phoenix Arizona	5.09
+10/2/2021	99CentStore	Phoenix Arizona	5.33
+10/2/2021	Arco Gasoline	Phoenix Arizona	64.10
+10/2/2021	Patreon	Phoenix Arizona	4.11
+10/8/2021	Walmart	Phoenix Arizona	58.38
+10/8/2021	Frys	Phoenix Arizona	5.76
+10/8/2021	99CentStore	Phoenix Arizona	5.09
+10/8/2021	APS(Power)	Phoenix Arizona	68.01
+10/10/2021	Taco Bell	Phoenix Arizona	7.57
+10/10/2021	GlacierWaterVending	Phoenix Arizona	1.60
+10/10/2021	Patreon	Phoenix Arizona	2.00
+10/11/2021	SWGas	Phoenix Arizona	33.27
+10/14/2021	Salut	Phoenix Arizona	25.00
+10/14/2021	T-Mobile	Phoenix Arizona	20.00
+10/15/2021	Walmart	Phoenix Arizona	1.48
+10/15/2021	Walmart	Phoenix Arizona	89.90
+10/15/2021	99CentStore	Phoenix Arizona	5.09
+10/15/2021	GoodWill	Phoenix Arizona	2.98
+10/17/2021	CenturyLink	Phoenix Arizona	49.00
+10/21/2021	Dave(NovRent)	Phoenix Arizona	725.00
+10/21/2021	Dave(DecRent)	Phoenix Arizona	725.00
+10/21/2021	Dave(JanRent)	Phoenix Arizona	725.00
+10/22/2021	Powell'sSweetShop	Red Bluff	12.18
+10/23/2021	MapleGarden	Red Bluff	12.78
+10/23/2021	BaskinRobins	Red Bluff	11.47
+10/25/2021	Little Caesars	Red Bluff	27.92
+10/26/2021	OneStopGas&Food	Red Bluff	2.34
+10/28/2021	Dollar Tree	Red Bluff	2.00
+10/30/2021	Sky Harbor Intl	Red Bluff	108.00
+10/31/2021	Walmart	Phoenix Arizona	6.49
+10/31/2021	Walmart	Phoenix Arizona	7.22
+10/31/2021	99CentStore	Phoenix Arizona	7.25
+10/31/2021	ModeWorl	Phoenix Arizona	30.25
+10/31/2021	Chevron	Phoenix Arizona	51.00
+11/5/2021	99CentStore	Phoenix Arizona	6.11
+11/5/2021	Frys	Phoenix Arizona	9.79
+11/5/2021	PandaExpress	Phoenix Arizona	11.24
+11/5/2021	Walmart	Phoenix Arizona	32.02
+11/6/2021	Dunkin Donuts	Phoenix Arizona	2.68
+11/12/2021	Sprouts	Phoenix Arizona	3.85
+11/12/2021	Frys	Phoenix Arizona	5.07
+11/12/2021	99CentStore	Phoenix Arizona	8.86
+11/12/2021	Walmart	Phoenix Arizona	84.17
+11/13/2021	FatCats	Phoenix Arizona	29.67
+11/14/2021	FatCats	Phoenix Arizona	12.13
+11/14/2021	JessesFoodMart	Phoenix Arizona	65.20
+11/19/2021	99CentStore	Phoenix Arizona	5.09
+11/19/2021	home depot	Phoenix Arizona	28.94
+11/21/2021	Dollar Tree	Phoenix Arizona	3.12
+11/21/2021	Chipotle	Phoenix Arizona	35.78
+11/24/2021	PandaExpress	Phoenix Arizona	8.86
+11/24/2021	99CentStore	Phoenix Arizona	36.63
+11/24/2021	Dollar Tree	Phoenix Arizona	17.31
+11/24/2021	Arizona Donut Company	Phoenix Arizona	13.50
+11/27/2021	MapleGarden	Red Bluff	24.36
+12/5/2021	Casa Ramos	Red Bluff	58.58
+12/11/2021	Sharis	Red Bluff	81.00
+12/14/2021	T-Mobile	Red Bluff	20.00
+12/17/2021	SWGas	Red Bluff	23.96
+12/17/2021	CenturyLink	Red Bluff	49.00
+12/17/2021	JackInTheBox	Red Bluff	16.20
+12/19/2021	Dollar Tree	Red Bluff	10.00
+12/21/2021	Oculus	Red Bluff	29.99
+12/21/2021	Oculus	Red Bluff	14.99
+12/21/2021	Oculus	Red Bluff	4.99
+12/21/2021	Oculus	Red Bluff	19.99
+12/21/2021	Oculus	Red Bluff	7.99
+12/21/2021	Oculus	Red Bluff	14.99
+12/21/2021	Dysney Plus	Red Bluff	7.99
+12/24/2021	Ebay	Red Bluff	167.76
+12/28/2021	Dollar Tree	Red Bluff	5.00
+12/29/2021	Mount Shasta Ski Park	Red Bluff	128.00
+12/29/2021	Tomasini BlackSmithing	Anderson	48.99
+12/31/2021	Oculus	Red Bluff	14.99
+12/31/2021	Oculus	Red Bluff	19.99
+1/6/2022	Frys	Phoenix Arizona	12.26
+1/6/2022	Walmart	Phoenix Arizona	56.59
+1/6/2022	99CentStore	Phoenix Arizona	10.90
+1/11/2022	Online Metal	Phoenix Arizona	18.85
+1/12/2022	Amazon	Phoenix Arizona	58.79
+1/14/2022	Walmart	Phoenix Arizona	37.36
+1/14/2022	99CentStore	Phoenix Arizona	6.09
+1/14/2022	T-Mobile	Phoenix Arizona	20.00
+1/15/2022	Subway	Phoenix Arizona	8.87
+1/15/2022	SkateLand	Phoenix Arizona	23.68
+1/15/2022	Patreon	Phoenix Arizona	10.81
+1/15/2022	Dave(FebRent)	Phoenix Arizona	725.00
+1/17/2022	CenturyLink	Phoenix Arizona	49.00
+1/21/2022	Dysney Plus	Phoenix Arizona	7.99
+1/21/2022	99CentStore	Phoenix Arizona	6.09
+1/21/2022	Walmart	Phoenix Arizona	76.35
+1/24/2022	Amazon	Phoenix Arizona	24.85
+1/28/2022	PandaExpress	Phoenix Arizona	9.62
+1/28/2022	Walmart	Phoenix Arizona	50.48
+1/28/2022	99CentStore	Phoenix Arizona	6.09
+1/29/2022	Taco Bell	Phoenix Arizona	19.31
+1/29/2022	Chevron	Phoenix Arizona	70.00
+2/5/2022	99CentStore	Phoenix Arizona	6.09
+2/5/2022	Chipotle	Phoenix Arizona	2.56
+2/5/2022	Walmart	Phoenix Arizona	70.49
+2/8/2022	Walmart	Phoenix Arizona	72.40
+2/11/2022	PandaExpress	Phoenix Arizona	9.62
+2/11/2022	Walmart	Phoenix Arizona	26.96
+2/11/2022	Dollar Tree	Phoenix Arizona	4.05
+2/11/2022	99CentStore	Phoenix Arizona	6.09
+2/14/2022	T-Mobile	Phoenix Arizona	20.00
+2/17/2022	CenturyLink	Phoenix Arizona	49.00
+2/18/2022	PandaExpress	Phoenix Arizona	9.62
+2/18/2022	Frys	Phoenix Arizona	8.85
+2/18/2022	Walmart	Phoenix Arizona	40.09
+2/18/2022	99CentStore	Phoenix Arizona	14.66
+2/19/2022	Walmart	Phoenix Arizona	8.12
+2/20/2022	Dave(MarRent)	Phoenix Arizona	750.00
+2/21/2022	Dysney Plus	Phoenix Arizona	7.99
+2/25/2022	99CentStore	Phoenix Arizona	12.15
+2/25/2022	Walmart	Phoenix Arizona	67.32
+2/25/2022	Walmart	Phoenix Arizona	2.95
+2/25/2022	Frys	Phoenix Arizona	5.28
+2/25/2022	Frys Gas	Phoenix Arizona	47.20
+2/27/2022	Los Reyes De La Torta	Phoenix Arizona	23.00
+2/27/2022	Walmart	Phoenix Arizona	27.14
+3/4/2022	PandaExpress	Phoenix Arizona	9.62
+3/4/2022	Walmart	Phoenix Arizona	41.30
+3/4/2022	99CentStore	Phoenix Arizona	2.04
+3/4/2022	Dollar Tree	Phoenix Arizona	7.71
+3/5/2022	OReilly Auto Parts	Phoenix Arizona	34.57
+3/6/2022	Shell	Phoenix Arizona	68.00
+3/6/2022	FatCats	Phoenix Arizona	17.25
+3/6/2022	Osaka	Phoenix Arizona	61.00
+3/11/2022	Staples	Phoenix Arizona	12.13
+3/11/2022	99CentStore	Phoenix Arizona	12.13
+3/12/2022	Pizza Hut	Parker Arizona	20.08
+3/13/2022	Chevron	Atwater Arizona	4.00
+3/14/2022	T-Mobile	Red Bluff	20.00
+3/15/2022	Dave(AprRent)	Red Bluff	750.00
+3/19/2022	CenturyLink	Red Bluff	49.00
+3/19/2022	SQRedding	Redding	64.34
+3/20/2022	JackInTheBox	Redding	8.58
+3/21/2022	Dysney Plus	Red Bluff	7.99
+3/24/2022	BaskinRobins	Red Bluff	33.99
+3/24/2022	KhaiHoanRestaurant	Phoenix Arizona	23.00
+3/27/2022	Dollar Tree	Red Bluff	6.25
+3/27/2022	Taco Bell	Red Bluff	10.74
+4/7/2022	Dollar Tree	Red Bluff	1.34
+4/7/2022	BaskinRobins	Red Bluff	59.80
+4/9/2022	Round Table	Red Bluff	98.14
+4/9/2022	PandaExpress	Redding	24.24
+4/10/2022	Lassen Mineral Lodge	Mineral	1.59
+4/14/2022	T-Mobile	Red Bluff	20.00
+4/15/2022	Dave(MayRent)	Red Bluff	750.00
+4/16/2022	Ramos Donut House	Red Bluff	23.49
+4/17/2022	Prime Cinemas	Red Bluff	1.50
+4/17/2022	Prime Cinemas	Red Bluff	7.75
+4/17/2022	CenturyLink	Red Bluff	49.00
+4/17/2022	Dollar Tree	Red Bluff	10.00
+4/20/2022	Raleys	Red Bluff	8.99
+4/21/2022	Dysney Plus	Red Bluff	7.99
+4/23/2022	McDonalds	Red Bluff	15.24
+4/30/2022	Dollar Tree	Red Bluff	6.25
+4/30/2022	Two Buds BBQ	Red Bluff	38.70
+5/1/2022	CheckForCash	Red Bluff	100.00
+5/1/2022	CheckForCash	Red Bluff	30.00
+5/1/2022	Fair	Red Bluff	19.00
+5/1/2022	Fair	Red Bluff	7.00
+5/6/2022	Walmart	Red Bluff	9.20
+5/7/2022	Ramos Donut House	Red Bluff	22.68
+5/7/2022	JackInTheBox	Red Bluff	10.75
+5/9/2022	Allegent Air	Red Bluff	58.00
+5/10/2022	BaskinRobins	Red Bluff	5.98
+5/11/2022	JackInTheBox	Red Bluff	2.15
+5/14/2022	Palomino Room	Red Bluff	6.00
+5/14/2022	Bogeys Café	McCloud	87.00
+5/14/2022	T-Mobile	Red Bluff	20.00
+5/15/2022	Papa Murphys	Red Bluff	58.50
+5/17/2022	Gaumers	Red Bluff	20.00
+5/17/2022	CenturyLink	Red Bluff	49.00
+5/20/2022	SWGas	Red Bluff	32.83
+5/21/2022	Koi Palace	San Francisco	15.61
+5/21/2022	Metro	Phoenix Arizona	2.00
+5/21/2022	Dysney Plus	Phoenix Arizona	7.99
+5/22/2022	Taco Bell	Phoenix Arizona	6.48
+5/22/2022	Walmart	Phoenix Arizona	50.30
+5/22/2022	Dave(JunRent)	Red Bluff	750.00
+5/23/2022	Tanerite	Phoenix Arizona	33.33
+5/25/2022	NewAsianExpress	Rapid City	11.92
+5/25/2022	Allegent Air	Phoenix Arizona	5.00
+5/25/2022	Caldwell County BBQ	Phoenix Arizona	18.60
+5/27/2022	Allegent Air	Phoenix Arizona	3.00
+5/27/2022	Aurora Illustration	Lead SouthDakoda	5.32
+5/30/2022	PandaExpress	Phoenix Arizona	12.65
+5/30/2022	Walmart	Phoenix Arizona	55.27
+5/30/2022	99CentStore	Phoenix Arizona	5.36
+5/30/2022	Allegent Air	Phoenix Arizona	35.00
+5/30/2022	Allegent Air	Phoenix Arizona	5.00
+6/3/2022	Walmart	Phoenix Arizona	59.20
+6/3/2022	99CentStore	Phoenix Arizona	2.63
+6/3/2022	Frys	Phoenix Arizona	3.44
+6/4/2022	Chevron	Phoenix Arizona	80.00
+6/5/2022	Ebay	Phoenix Arizona	10.80
+6/10/2022	Walmart	Phoenix Arizona	43.13
+6/10/2022	99CentStore	Phoenix Arizona	6.68
+6/11/2022	LandisCyclery	Phoenix Arizona	119.95
+6/11/2022	SUBSCRIBESTAR	Phoenix Arizona	3.00
+6/14/2022	CarpartsCOM	Phoenix Arizona	137.28
+6/14/2022	T-Mobile	Phoenix Arizona	20.00
+6/17/2022	CenturyLink	Phoenix Arizona	49.00
+6/17/2022	Walmart	Phoenix Arizona	119.09
+6/17/2022	99CentStore	Phoenix Arizona	5.46
+6/19/2022	home depot	Phoenix Arizona	0.52
+6/20/2022	Circle K	Phoenix Arizona	1.08
+6/20/2022	home depot	Phoenix Arizona	5.38
+6/20/2022	Dave(JulRent)	Phoenix Arizona	750.00
+6/22/2022	Dysney Plus	Phoenix Arizona	7.99
+6/23/2022	SWGas	Phoenix Arizona	19.87
+6/25/2022	Dairy Queen	Phoenix Arizona	4.35
+6/25/2022	McDonalds	Phoenix Arizona	2.18
+6/25/2022	Chevron	Phoenix Arizona	2.29
+6/26/2022	Frys	Phoenix Arizona	6.39
+6/30/2022	FatCats	Phoenix Arizona	19.40
+7/1/2022	Walmart	Phoenix Arizona	50.32
+7/1/2022	Dollar Tree	Phoenix Arizona	6.35
+7/2/2022	SwingInASafari	Phoenix Arizona	23.72
+7/2/2022	Dollar Tree	Phoenix Arizona	0.54
+7/3/2022	JimmyJohns	Phoenix Arizona	25.19
+7/3/2022	FatCats	Phoenix Arizona	5.96
+7/3/2022	FatCats	Phoenix Arizona	8.66
+7/4/2022	McDonalds	Phoenix Arizona	21.31
+7/4/2022	Frys	Phoenix Arizona	14.66
+7/9/2022	Walmart	Phoenix Arizona	47.85
+7/9/2022	Caldwell County BBQ	Phoenix Arizona	64.83
+7/10/2022	Walmart	Phoenix Arizona	24.40
+7/14/2022	T-Mobile	Phoenix Arizona	20.00
+7/15/2022	99CentStore	Phoenix Arizona	11.65
+7/15/2022	Walmart	Phoenix Arizona	58.49
+7/15/2022	Frys	Phoenix Arizona	4.59
+7/16/2022	PersonalPreference	Phoenix Arizona	20.00
+7/17/2022	CenturyLink	Phoenix Arizona	49.00
+7/17/2022	MesaMarket	Phoenix Arizona	12.31
+7/17/2022	Dave(AugRent)	Phoenix Arizona	750.00
+7/17/2022	Dave(SepRent)	Phoenix Arizona	750.00
+7/17/2022	APS(Power)	Phoenix Arizona	157.44
+7/17/2022	SWGas	Phoenix Arizona	22.64
+7/22/2022	Dysney Plus	Phoenix Arizona	7.99
+7/22/2022	PandaExpress	Phoenix Arizona	10.05
+7/22/2022	Walmart	Phoenix Arizona	47.90
+7/22/2022	99CentStore	Phoenix Arizona	4.07
+7/24/2022	GolfLand	Phoenix Arizona	54.41
+7/24/2022	FatCats	Phoenix Arizona	13.54
+7/24/2022	FatCats	Phoenix Arizona	27.08
+7/28/2022	Ebay	Phoenix Arizona	144.78
+7/29/2022	PandaExpress	Phoenix Arizona	12.65
+7/29/2022	Walmart	Phoenix Arizona	4.13
+7/29/2022	99CentStore	Phoenix Arizona	5.09
+7/30/2022	BurbankAirportFood	Phoenix Arizona	16.48
+7/30/2022	Metro	Phoenix Arizona	2.00
+7/30/2022	Dunkin Donuts	Phoenix Arizona	18.36
+7/31/2022	MapleGarden	Red Bluff	10.52
+8/4/2022	Walmart	Red Bluff	13.42
+8/10/2022	PeterChus	Red Bluff	147.00
+8/12/2022	JackInTheBox	Red Bluff	23.90
+8/13/2022	CVS	San Diego	22.53
+8/14/2022	OtroLLaTaqueria	San Diego	16.08
+8/14/2022	SWGas	Phoenix Arizona	21.59
+8/14/2022	T-Mobile	Phoenix Arizona	20.00
+8/15/2022	APS(Power)	Phoenix Arizona	146.85
+8/17/2022	CenturyLink	Phoenix Arizona	49.00
+8/20/2022	Harbor Freight	Red Bluff	54.67
+8/21/2022	Burger King	Red Bluff	15.04
+8/21/2022	Dysney Plus	Phoenix Arizona	7.99
+8/28/2022	Metro	Phoenix Arizona	2.00
+8/28/2022	Frys	Phoenix Arizona	16.53
+8/28/2022	Walmart	Phoenix Arizona	63.96
+9/2/2022	PandaExpress	Phoenix Arizona	10.05
+9/2/2022	Walmart	Phoenix Arizona	51.92
+9/3/2022	PeterPiperPizza	Phoenix Arizona	115.72
+9/3/2022	Chevron	Phoenix Arizona	74.00
+9/4/2022	FatCats	Phoenix Arizona	16.25
+9/9/2022	PandaExpress	Phoenix Arizona	10.05
+9/9/2022	Walmart	Phoenix Arizona	44.94
+9/9/2022	Dollar Tree	Phoenix Arizona	3.90
+9/12/2022	APS(Power)	Phoenix Arizona	89.91
+9/14/2022	SWGas	Phoenix Arizona	19.86
+9/14/2022	T-Mobile	Phoenix Arizona	20.00
+9/15/2022	Safeway	Phoenix Arizona	7.62
+9/16/2022	Walmart	Phoenix Arizona	72.89
+9/16/2022	99CentStore	Phoenix Arizona	3.36
+9/16/2022	Frys	Phoenix Arizona	5.63
+9/17/2022	CenturyLink	Phoenix Arizona	49.00
+9/17/2022	Dollar Tree	Phoenix Arizona	4.74
+9/17/2022	BaskinRobins	Phoenix Arizona	39.99
+9/18/2022	Walmart	Phoenix Arizona	5.27
+9/20/2022	Dave(OctRent)	Phoenix Arizona	750.00
+9/21/2022	Imagine3D	Phoenix Arizona	24.80
+9/21/2022	Caldwell County BBQ	Phoenix Arizona	40.40
+9/21/2022	SwingInASafari	Phoenix Arizona	23.72
+9/21/2022	Frys	Phoenix Arizona	8.95
+9/22/2022	Dysney Plus	Phoenix Arizona	7.99
+9/22/2022	TexasRoadhouse	Phoenix Arizona	44.36
+9/23/2022	99CentStore	Phoenix Arizona	2.04
+9/23/2022	Walmart	Phoenix Arizona	23.87
+9/23/2022	OrganStopPizza	Phoenix Arizona	2.50
+9/23/2022	OrganStopPizza	Phoenix Arizona	2.50
+9/23/2022	OrganStopPizza	Phoenix Arizona	2.50
+9/23/2022	QTGasStation	Phoenix Arizona	6.66
+9/30/2022	PandaExpress	Phoenix Arizona	12.65
+9/30/2022	Walmart	Phoenix Arizona	87.08
+9/30/2022	99CentStore	Phoenix Arizona	4.58
+10/1/2022	99CentStore	Phoenix Arizona	6.80
+10/1/2022	Credit	Phoenix Arizona	-190.29
+10/3/2022	QTGasStation	Phoenix Arizona	111.00
+10/3/2022	WildfireLighting	Phoenix Arizona	56.17
+10/4/2022	Amazon	Phoenix Arizona	53.77
+10/4/2022	Amazon	Phoenix Arizona	42.56
+10/7/2022	99CentStore	Phoenix Arizona	2.94
+10/7/2022	Walmart	Phoenix Arizona	68.71
+10/7/2022	ModeWorl	Phoenix Arizona	43.23
+10/8/2022	Walmart	Phoenix Arizona	1.77
+10/11/2022	Safeway	Phoenix Arizona	3.02
+10/12/2022	Ecrater	Phoenix Arizona	20.00
+10/13/2022	Dollar Tree	Phoenix Arizona	1.35
+10/13/2022	BaskinRobins	Phoenix Arizona	39.99
+10/14/2022	99CentStore	Phoenix Arizona	2.65
+10/14/2022	Walmart	Phoenix Arizona	68.75
+10/14/2022	Frys	Phoenix Arizona	9.27
+10/15/2022	T-Mobile	Phoenix Arizona	20.00
+10/16/2022	APS(Power)	Phoenix Arizona	124.58
+10/16/2022	SWGas	Phoenix Arizona	23.38
+10/16/2022	Dave(NovRent)	Phoenix Arizona	750.00
+10/16/2022	Dave(DecRent)	Phoenix Arizona	750.00
+10/16/2022	Dave(JanRent)	Phoenix Arizona	750.00
+10/16/2022	EconomyCandy	Phoenix Arizona	72.65
+10/17/2022	CenturyLink	Phoenix Arizona	49.00
+10/21/2022	Dysney Plus	Phoenix Arizona	7.99
+10/21/2022	99CentStore	Phoenix Arizona	4.58
+10/21/2022	Walmart	Phoenix Arizona	61.14
+10/21/2022	PandaExpress	Phoenix Arizona	11.00
+10/23/2022	Walmart	Phoenix Arizona	112.84
+10/23/2022	Dollar Tree	Phoenix Arizona	5.41
+10/23/2022	99CentStore	Phoenix Arizona	20.54
+10/27/2022	Walmart	Phoenix Arizona	90.57
+10/27/2022	99CentStore	Phoenix Arizona	9.35
+10/27/2022	99CentStore	Phoenix Arizona	3.24
+10/28/2022	PandaExpress	Phoenix Arizona	10.05
+10/28/2022	Walmart	Phoenix Arizona	43.46
+11/1/2022	Ebay	Red Bluff	160.00
+11/4/2022	Walmart	Phoenix Arizona	49.93
+11/4/2022	EconomyCandy	Phoenix Arizona	-45.00
+11/5/2022	PandaExpress	Phoenix Arizona	11.03
+11/5/2022	APS(Power)	Phoenix Arizona	92.72
+11/7/2022	Walmart	Red Bluff	13.48
+11/14/2022	T-Mobile	Red Bluff	20.00
+11/16/2022	Prime Cinemas	Red Bluff	12.50
+11/16/2022	Prime Cinemas	Red Bluff	29.25
+11/17/2022	CenturyLink	Red Bluff	49.00
+11/18/2022	home depot	Red Bluff	7.68
+11/18/2022	Dollar Tree	Red Bluff	2.59
+11/20/2022	SWGas	Red Bluff	32.14
+11/20/2022	RBAirport	Red Bluff	16.00
+11/21/2022	Dysney Plus	Red Bluff	7.99
+11/25/2022	Ebay	Red Bluff	14.63
+11/26/2022	Amazon	Red Bluff	31.98
+11/27/2022	Amazon	Red Bluff	75.20
+12/8/2022	Taco Bell	Red Bluff	6.44
+12/10/2022	SWGas	Red Bluff	21.50
+12/10/2022	Dollar Tree	Red Bluff	3.75
+12/10/2022	Walmart	Red Bluff	6.31
+12/10/2022	APS(Power)	Red Bluff	26.40
+12/10/2022	StateTheatre	Red Bluff	4.00
+12/10/2022	Taco Bell	Red Bluff	13.29
+12/11/2022	Ikkyu	Red Bluff	111.00
+12/14/2022	T-Mobile	Red Bluff	20.00
+12/16/2022	home depot	Red Bluff	21.47
+12/17/2022	CenturyLink	Red Bluff	49.00
+12/19/2022	BurritoBandito	Red Bluff	30.69
+12/20/2022	Oculus	Red Bluff	17.99
+12/20/2022	Oculus	Red Bluff	15.99
+12/20/2022	Dysney Plus	Red Bluff	10.99
+12/22/2022	Dollar Tree	Red Bluff	7.50
+12/22/2022	Walgreens	Red Bluff	33.94
+12/24/2022	Mount Shasta Ski Park	Red Bluff	143.00
+12/28/2022	Mount Shasta Ski Park	Red Bluff	154.00
+1/4/2023	Walmart	Red Bluff	6.47
+1/7/2023	Metro	Phoenix Arizona	2.00
+1/8/2023	Walmart	Phoenix Arizona	117.91
+1/8/2023	PandaExpress	Phoenix Arizona	13.08
+1/8/2023	Frys	Phoenix Arizona	10.55
+1/8/2023	99CentStore	Phoenix Arizona	2.65
+1/8/2023	Chevron	Phoenix Arizona	60.00
+1/13/2023	Walmart	Phoenix Arizona	44.41
+1/14/2023	T-Mobile	Phoenix Arizona	20.00
+1/14/2023	FatCats	Phoenix Arizona	16.25
+1/14/2023	APS(Power)	Phoenix Arizona	25.16
+1/14/2023	SWGas	Phoenix Arizona	23.24
+1/15/2023	JimmyJohns	Phoenix Arizona	26.93
+1/17/2023	CenturyLink	Phoenix Arizona	49.00
+1/20/2023	Walmart	Phoenix Arizona	33.13
+1/20/2023	99CentStore	Phoenix Arizona	5.29
+1/21/2023	Dysney Plus	Phoenix Arizona	7.99
+1/21/2023	ModeWorl	Phoenix Arizona	75.66
+1/21/2023	Zorbas	Phoenix Arizona	35.60
+1/21/2023	SmoLing	Phoenix Arizona	28.05
+1/21/2023	SmoLing	Phoenix Arizona	28.05
+4/3/2021	SWGas	Phoenix Arizona	35.50
+4/26/2022	Walmart	Red Bluff	57.23
+1/21/2023	Dave(FebRent)	Phoenix Arizona	750.00
+1/27/2023	Youtube	Phoenix Arizona	3.99
+1/27/2023	99CentStore	Phoenix Arizona	5.29
+1/27/2023	Walmart	Phoenix Arizona	35.95
+1/27/2023	Frys	Phoenix Arizona	6.16
+1/27/2023	PandaExpress	Phoenix Arizona	13.08
+1/28/2023	Chevron	Phoenix Arizona	23.00
+1/28/2023	Taco Bell	Phoenix Arizona	9.33
+1/28/2023	Circle K	Phoenix Arizona	7.22
+1/28/2023	KFC	Phoenix Arizona	10.62
+1/31/2023	Walmart	Phoenix Arizona	28.79
+1/31/2023	99CentStore	Phoenix Arizona	5.29
+2/3/2023	99CentStore	Phoenix Arizona	5.29
+2/3/2023	Walmart	Phoenix Arizona	73.02
+2/4/2023	Frys	Phoenix Arizona	7.20
+2/4/2023	Dunkin Donuts	Phoenix Arizona	6.02
+2/5/2023	Little Caesars	Phoenix Arizona	15.64
+2/5/2023	SUBSCRIBESTAR	Phoenix Arizona	5.00
+2/9/2023	Amazon	Phoenix Arizona	165.72
+2/9/2023	Amazon	Phoenix Arizona	36.47
+2/10/2023	Safeway	Phoenix Arizona	11.18
+2/10/2023	PandaExpress	Phoenix Arizona	10.49
+2/10/2023	99CentStore	Phoenix Arizona	9.43
+2/10/2023	Walmart	Phoenix Arizona	96.58
+2/11/2023	APS(Power)	Phoenix Arizona	86.08
+2/11/2023	Chevron	Phoenix Arizona	52.00
+2/11/2023	SWGas	Phoenix Arizona	37.78
+2/12/2023	Walmart	Phoenix Arizona	2.95
+2/12/2023	Chevron	Phoenix Arizona	36.50
+2/14/2023	T-Mobile	Phoenix Arizona	20.00
+2/17/2023	99CentStore	Phoenix Arizona	5.29
+2/17/2023	Frys	Phoenix Arizona	7.01
+2/17/2023	PandaExpress	Phoenix Arizona	13.08
+2/17/2023	Walmart	Phoenix Arizona	46.18
+2/17/2023	CenturyLink	Phoenix Arizona	49.00
+2/18/2023	Ebay	Phoenix Arizona	10.27
+2/18/2023	HarkinsTheatre	Phoenix Arizona	36.50
+2/21/2023	Dysney Plus	Phoenix Arizona	7.99
+2/23/2023	Walmart	Phoenix Arizona	23.68
+2/24/2023	99CentStore	Phoenix Arizona	6.62
+2/24/2023	PandaExpress	Phoenix Arizona	10.49
+2/24/2023	Walmart	Phoenix Arizona	42.79
+2/24/2023	Dri Crucial	Phoenix Arizona	324.29
+2/25/2023	Chevron	Phoenix Arizona	1.72
+2/27/2023	BoardgameArena	Phoenix Arizona	5.00
+3/1/2023	SUBSCRIBESTAR	Phoenix Arizona	5.00
+3/1/2023	Ace Hardware	Phoenix Arizona	36.46
+3/3/2023	Circle K	Phoenix Arizona	1.51
+3/3/2023	Walmart	Phoenix Arizona	78.51
+3/3/2023	99CentStore	Phoenix Arizona	7.02
+3/4/2023	Shell	Phoenix Arizona	55.40
+3/5/2023	Taco Bell	Phoenix Arizona	10.08
+3/6/2023	Safeway	Phoenix Arizona	20.00
+3/6/2023	Dollar Tree	Phoenix Arizona	1.08
+3/6/2023	DiscountTire	Phoenix Arizona	189.70
+3/6/2023	Chevron	Phoenix Arizona	45.42
+3/6/2023	Chevron	Phoenix Arizona	71.00
+3/7/2023	CVS	Phoenix Arizona	12.20
+3/7/2023	DiscountTire	Phoenix Arizona	572.34
+3/8/2023	Circle K	Phoenix Arizona	49.00
+3/9/2023	Staples	Phoenix Arizona	12.41
+3/10/2023	99CentStore	Phoenix Arizona	3.97
+3/10/2023	Walmart	Phoenix Arizona	44.81
+3/11/2023	home depot	Phoenix Arizona	41.38
+3/11/2023	home depot	Phoenix Arizona	4.81
+3/12/2023	Walmart	Phoenix Arizona	23.34
+3/13/2023	home depot	Phoenix Arizona	4.91
+3/14/2023	T-Mobile	Phoenix Arizona	20.00
+3/15/2023	SWGas	Phoenix Arizona	35.50
+3/17/2023	Dave(Apr-AugRent)	Phoenix Arizona	3750
+3/17/2023	PandaExpress	Phoenix Arizona	10.49
+3/17/2023	99CentStore	Phoenix Arizona	3.97
+3/17/2023	Frys	Phoenix Arizona	8.06
+3/17/2023	Walmart	Phoenix Arizona	46.08
+3/17/2023	Barbershop	Phoenix Arizona	25.00
+3/17/2023	CenturyLink	Phoenix Arizona	49.00
+3/17/2023	CenturyLink	Phoenix Arizona	49.00
+3/18/2023	Chevron	Phoenix Arizona	1.72
+3/19/2023	Metro	Phoenix Arizona	2.00
+3/19/2023	Subway	Phoenix Arizona	11.87
+3/19/2023	Dunkin Donuts	Phoenix Arizona	5.16
+3/19/2023	VictoriaVacation	Victoria BC Canada	1226.57
+3/21/2023	Dysney Plus	Phoenix Arizona	7.99
+3/21/2023	Dysney Plus	Phoenix Arizona	7.99
+3/25/2023	EvSe	Phoenix Arizona	19.96
+3/25/2023	XrLLC	Phoenix Arizona	45.55
+3/26/2023	Wendys	Phoenix Arizona	14.85
+3/27/2023	BoardgameArena	Phoenix Arizona	5.00
+3/27/2023	Metro	Phoenix Arizona	2.00
+3/28/2023	Dave(May-AugRent)	Phoenix Arizona	200
+3/30/2023	Walmart	Phoenix Arizona	29.06
+3/30/2023	PandaExpress	Phoenix Arizona	10.49
+3/30/2023	OReilly Auto Parts	Phoenix Arizona	37.33
+3/30/2023	Shell	Phoenix Arizona	1.29
+3/31/2023	PandaExpress	Phoenix Arizona	10.49
+3/31/2023	Metro	Phoenix Arizona	2.00
+4/3/2023	ValleyCinema	Red Bluff	11.21
+4/3/2023	Dollar Tree	Red Bluff	1.25
+4/3/2023	APS(Power)	Phoenix Arizona	84.95
+4/4/2023	BaskinRobins	Red Bluff	7.78
+4/7/2023	Ikkyu	Red Bluff	80.00
+4/8/2023	MatrixCardsGames	Red Bluff	47.18
+4/8/2023	Dollar Tree	Red Bluff	45.44
+4/13/2023	Luigis	Red Bluff	17.74
+4/14/2023	T-Mobile	Phoenix Arizona	20.00
+4/14/2023	Youtube	Red Bluff	5.99
+4/21/2023	Dysney Plus	Red Bluff	7.99
+4/22/2023	Walmart	Red Bluff	17.97
+4/22/2023	Luigis	Red Bluff	28.22
+4/22/2023	Dollar Tree	Red Bluff	6.25
+4/22/2023	Thai House	Red Bluff	82.00
+4/27/2023	BoardgameArena	Red Bluff	5.00
+4/30/2023	BaskinRobins	Red Bluff	9.68
+5/6/2023	APS(Power)	Phoenix Arizona	64.74
+5/6/2023	SWGas	Phoenix Arizona	24.24
+5/6/2023	Raleys	Red Bluff	50.96
+5/6/2023	Prime Cinemas	Red Bluff	25.75
+5/6/2023	Taco Bell	Red Bluff	9.13
+5/7/2023	Fair	Red Bluff	3.75
+5/7/2023	Fair	Red Bluff	8.00
+5/14/2023	T-Mobile	Red Bluff	20.00
+5/17/2023	CenturyLink	Phoenix Arizona	49.00
+5/19/2023	Walmart	Phoenix Arizona	57.90
+5/20/2023	McDonalds	Red Bluff	28.53
+5/20/2023	McDonalds	Red Bluff	0.81
+5/20/2023	OneStopGas&Food	Red Bluff	9.87
+5/21/2023	Walmart	Phoenix Arizona	36.45
+5/22/2023	Dysney Plus	Phoenix Arizona	7.99
+5/23/2023	SWGas	Phoenix Arizona	16.58
+5/24/2023	Pride Gas	Phoenix Arizona	75.00
+5/25/2023	Chevron	Phoenix Arizona	4.50
+5/25/2023	AmericanFivestar	Phoenix Arizona	1225.14
+5/27/2023	FatCats	Phoenix Arizona	6.51
+5/27/2023	FatCats	Phoenix Arizona	16.88
+5/28/2023	Walmart	Phoenix Arizona	70.40
+5/28/2023	Frys	Phoenix Arizona	8.84
+5/28/2023	Safeway	Phoenix Arizona	7.56
+5/28/2023	Chevron	Phoenix Arizona	56.00
+5/29/2023	HornBlasters	Phoenix Arizona	43.59
+5/29/2023	Ebay	Phoenix Arizona	30.53
+5/29/2023	Ebay	Phoenix Arizona	20.52
+5/29/2023	Ebay	Phoenix Arizona	1.99
+5/29/2023	Ebay	Phoenix Arizona	32.42
+5/29/2023	Walmart	Phoenix Arizona	6.13
+5/29/2023	Walmart	Phoenix Arizona	46.47
+6/2/2023	USPS	Phoenix Arizona	0.87
+6/2/2023	99CentStore	Phoenix Arizona	5.19
+6/2/2023	Walmart	Phoenix Arizona	24.15
+6/2/2023	PandaExpress	Phoenix Arizona	10.49
+6/2/2023	Chevron	Phoenix Arizona	2.37
+6/3/2023	UVBeast	Phoenix Arizona	89.98
+6/3/2023	Walmart	Phoenix Arizona	14.03
+6/4/2023	CheapNEasyTrafficSchool	Phoenix Arizona	231.95
+6/4/2023	Subway	Phoenix Arizona	9.61
+6/4/2023	GolfLand	Phoenix Arizona	56.77
+6/4/2023	GolfLand	Phoenix Arizona	7.74
+6/4/2023	GolfLand	Phoenix Arizona	9.99
+6/7/2023	Barbershop	Phoenix Arizona	30.00
+6/8/2023	99CentStore	Phoenix Arizona	3.05
+6/8/2023	Walmart	Phoenix Arizona	24.94
+6/8/2023	Little Caesars	Phoenix Arizona	9.18
+6/8/2023	Chevron	Phoenix Arizona	2.37
+6/8/2023	APS(Power)	Phoenix Arizona	117.14
+6/10/2023	That Place	Lead SouthDakoda	57.80
+6/10/2023	RenesanceFestival	Lead SouthDakoda	5.32
+6/11/2023	Chubby Chipmunk	Lead SouthDakoda	15.93
+6/11/2023	RenesanceFestival	Lead SouthDakoda	14.95
+6/11/2023	RenesanceFestival	Lead SouthDakoda	9.00
+6/11/2023	RenesanceFestival	Lead SouthDakoda	5.00
+6/11/2023	RenesanceFestival	Lead SouthDakoda	10.00
+6/11/2023	RenesanceFestival	Lead SouthDakoda	3.00
+6/11/2023	RenesanceFestival	Lead SouthDakoda	4.03
+6/12/2023	Walmart	Phoenix Arizona	3.44
+6/12/2023	Allegent Air	Phoenix Arizona	5.00
+6/12/2023	T-Mobile	Phoenix Arizona	20.00
+6/12/2023	Allegent Air	Phoenix Arizona	36.00
+6/16/2023	Sprouts	Phoenix Arizona	19.33
+6/16/2023	Walmart	Phoenix Arizona	84.72
+6/17/2023	CenturyLink	Phoenix Arizona	49.00
+6/17/2023	SWGas	Phoenix Arizona	22.65
+6/17/2023	Chevron	Phoenix Arizona	76.00
+6/18/2023	Amazon	Phoenix Arizona	81.20
+6/22/2023	Dysney Plus	Phoenix Arizona	7.99
+6/23/2023	PandaExpress	Phoenix Arizona	10.49
+6/23/2023	Frys	Phoenix Arizona	7.01
+6/23/2023	Walmart	Phoenix Arizona	77.76
+6/23/2023	99CentStore	Phoenix Arizona	4.22
+6/24/2023	Chevron	Phoenix Arizona	2.37
+6/24/2023	HarkinsTheatre	Phoenix Arizona	9.50
+6/24/2023	HarkinsTheatre	Phoenix Arizona	19.25
+6/25/2023	Recreation.gov	Phoenix Arizona	6.00
+6/25/2023	Recreation.gov	Phoenix Arizona	6.00
+6/25/2023	Walmart	Phoenix Arizona	55.22
+6/28/2023	Dave(Sep-FebRent)	Phoenix Arizona	4800.00
+6/30/2023	Walmart	Phoenix Arizona	23.86
+7/1/2023	Recreation.gov	Phoenix Arizona	6.00
+7/1/2023	Recreation.gov	Phoenix Arizona	6.00
+7/1/2023	Walmart	Phoenix Arizona	2.66
+7/1/2023	Circle K	Phoenix Arizona	24.00
+7/3/2023	HarkinsTheatre	Pinetop Arizona	6.00
+7/3/2023	Ace Hardware	Pinetop Arizona	17.05
+7/3/2023	Cke Pinetop Brewing	Pinetop Arizona	60.00
+7/3/2023	Conco	Pinetop Arizona	57.00
+7/4/2023	Frys	Phoenix Arizona	19.90
+7/4/2023	Gilbert4THJuly	Phoenix Arizona	15.00
+7/7/2023	Walmart	Phoenix Arizona	70.48
+7/7/2023	99CentStore	Phoenix Arizona	3.24
+7/8/2023	Lowes	Phoenix Arizona	75.22
+7/8/2023	Chevron	Phoenix Arizona	57.00
+7/9/2023	Shell	Phoenix Arizona	34.55
+7/9/2023	Dunkin Donuts	Phoenix Arizona	5.59
+7/10/2023	Dairy Queen	Phoenix Arizona	8.78
+7/13/2023	Walmart	Phoenix Arizona	60.72
+7/14/2023	T-Mobile	Phoenix Arizona	20.00
+7/15/2023	Walmart	Phoenix Arizona	19.85
+7/15/2023	99CentStore	Phoenix Arizona	2.16
+7/15/2023	APS(Power)	Phoenix Arizona	215.66
+7/15/2023	Chevron	Phoenix Arizona	44.00
+7/15/2023	SWGas	Phoenix Arizona	22.67
+7/17/2023	CenturyLink	Phoenix Arizona	49.00
+7/21/2023	Frys	Phoenix Arizona	10.55
+7/21/2023	Walmart	Phoenix Arizona	38.34
+7/21/2023	Walmart	Phoenix Arizona	2.95
+7/21/2023	Batteries Plus Bulbs	Phoenix Arizona	60.49
+7/22/2023	Dysney Plus	Phoenix Arizona	7.99
+7/22/2023	JimmyJohns	Phoenix Arizona	8.82
+7/23/2023	Circle K	Phoenix Arizona	2.00
+7/23/2023	Marathon Gas	Phoenix Arizona	44.00
+7/23/2023	Pride Gas	Phoenix Arizona	13.30
+7/23/2023	Dairy Queen	Phoenix Arizona	9.87
+7/27/2023	Dysney Plus	Phoenix Arizona	1.56
+7/27/2023	TotalElement	Phoenix Arizona	64.98
+7/27/2023	Bga Trial Over	Phoenix Arizona	5.00
+7/27/2023	Walmart	Phoenix Arizona	7.84
+7/28/2023	Walmart	Phoenix Arizona	73.21
+8/3/2023	99CentStore	Phoenix Arizona	6.11
+8/4/2023	Walmart	Phoenix Arizona	-23.80
+8/4/2023	Walmart	Phoenix Arizona	85.49
+8/5/2023	Subway	Phoenix Arizona	25.38
+8/5/2023	Shell	Phoenix Arizona	45.00
+8/5/2023	Dunkin Donuts	Phoenix Arizona	5.16
+8/7/2023	Shell	Phoenix Arizona	30.00
+8/7/2023	Chevron	Phoenix Arizona	25.00
+8/11/2023	Walmart	Phoenix Arizona	33.74
+8/11/2023	PandaExpress	Phoenix Arizona	13.08
+8/12/2023	APS(Power)	Phoenix Arizona	243.05
+8/12/2023	SWGas	Phoenix Arizona	22.98
+8/13/2023	Walmart	Phoenix Arizona	8.92
+8/14/2023	T-Mobile	Phoenix Arizona	20.00
+8/17/2023	99CentStore	Phoenix Arizona	3.24
+8/17/2023	Walmart	Phoenix Arizona	30.72
+8/17/2023	PandaExpress	Phoenix Arizona	10.49
+8/17/2023	CenturyLink	Phoenix Arizona	49.00
+8/18/2023	QuikTripGas	Phoenix Arizona	16.00
+8/19/2023	Taco Bell	Phoenix Arizona	19.24
+8/20/2023	Dairy Queen	Phoenix Arizona	9.52
+8/20/2023	UntamedConfections	Phoenix Arizona	5.00
+8/20/2023	CoyoteCountrySeason	Phoenix Arizona	12.66
+8/20/2023	Pride Gas	Phoenix Arizona	12.00
+8/21/2023	Circle K	Phoenix Arizona	32.00
+8/22/2023	Dysney Plus	Phoenix Arizona	9.99
+8/24/2023	PandaExpress	Phoenix Arizona	11.00
+8/24/2023	Walmart	Phoenix Arizona	71.54
+8/27/2023	Auto-Self-Repair	Phoenix Arizona	139.00
+8/27/2023	BoardgameArena	Phoenix Arizona	5.00
+8/27/2023	Circle K	Phoenix Arizona	44.00
+8/31/2023	Walmart	Phoenix Arizona	52.79
+9/2/2023	USPS	Phoenix Arizona	7.04
+9/2/2023	Shell	Phoenix Arizona	1.51
+9/3/2023	CharlieClarks	Phoenix Arizona	42.00
+9/3/2023	Bashas	Phoenix Arizona	4.37
+9/4/2023	Culvers	Phoenix Arizona	13.10
+9/5/2023	Circle K	Phoenix Arizona	18.00
+9/5/2023	Circle K	Phoenix Arizona	25.00
+9/8/2023	Walmart	Phoenix Arizona	69.90
+9/8/2023	PandaExpress	Phoenix Arizona	10.49
+9/9/2023	ChanpenThaiCuisine	Phoenix Arizona	37.00
+9/9/2023	Circle K	Phoenix Arizona	1.18
+9/9/2023	Taco Bell	Phoenix Arizona	10.28
+9/10/2023	APS(Power)	Phoenix Arizona	228.39
+9/14/2023	T-Mobile	Phoenix Arizona	20.00
+9/15/2023	Walmart	Phoenix Arizona	53.29
+9/15/2023	Walmart	Phoenix Arizona	3.66
+9/15/2023	Frys	Phoenix Arizona	12.11
+9/15/2023	PandaExpress	Phoenix Arizona	13.30
+9/15/2023	Amazon	Phoenix Arizona	3.49
+9/16/2023	SWGas	Phoenix Arizona	21.11
+9/16/2023	Dennys	Phoenix Arizona	49.00
+9/17/2023	CenturyLink	Phoenix Arizona	49.00
+9/17/2023	Pride Gas	Phoenix Arizona	62.00
+9/18/2023	Amazon	Phoenix Arizona	32.37
+9/19/2023	Amazon	Phoenix Arizona	82.55
+9/22/2023	Walmart	Phoenix Arizona	52.84
+9/22/2023	PandaExpress	Phoenix Arizona	14.30
+9/22/2023	GoodWill	Phoenix Arizona	10.00
+9/23/2023	Walmart	Phoenix Arizona	13.94
+9/23/2023	Ace Hardware	Phoenix Arizona	7.00
+9/25/2023	Ebay	Phoenix Arizona	10.19
+9/25/2023	Amazon	Phoenix Arizona	38.89
+9/25/2023	Amazon	Phoenix Arizona	4.31
+9/27/2023	BoardgameArena	Phoenix Arizona	5.00
+9/29/2023	Walmart	Phoenix Arizona	9.06
+9/29/2023	Walmart	Phoenix Arizona	28.17
+9/29/2023	PandaExpress	Phoenix Arizona	13.08
+9/30/2023	Ace Hardware	Phoenix Arizona	19.00
+9/30/2023	Ace Hardware	Phoenix Arizona	4.31
+9/30/2023	home depot	Phoenix Arizona	30.74
+9/30/2023	Circle K	Phoenix Arizona	1.18
+9/30/2023	Taco Bell	Phoenix Arizona	7.00
+10/2/2023	Ebay	Phoenix Arizona	61.05
+10/3/2023	Amazon	Phoenix Arizona	20.48
+10/3/2023	AmericanFivestar	Phoenix Arizona	75.00
+10/3/2023	Safeway	Phoenix Arizona	5.08
+10/4/2023	Metro	Phoenix Arizona	2.00
+10/6/2023	PandaExpress	Phoenix Arizona	13.30
+10/7/2023	Walmart	Phoenix Arizona	38.81
+10/7/2023	Ace Hardware	Phoenix Arizona	49.69
+10/7/2023	Ace Hardware	Phoenix Arizona	5.39
+10/7/2023	Ace Hardware	Phoenix Arizona	21.00
+10/7/2023	Ace Hardware	Phoenix Arizona	3.98
+10/8/2023	Walmart	Phoenix Arizona	1.83
+10/8/2023	Ace Hardware	Phoenix Arizona	4.00
+10/8/2023	home depot	Phoenix Arizona	7.55
+10/13/2023	APS(Power)	Phoenix Arizona	131.77
+10/13/2023	SWGas	Phoenix Arizona	27.72
+10/13/2023	Walmart	Phoenix Arizona	57.25
+10/14/2023	T-Mobile	Phoenix Arizona	20.00
+10/14/2023	PickAndPull	Phoenix Arizona	3.00
+10/14/2023	PickAndPull	Phoenix Arizona	44.82
+10/14/2023	PickAndPull	Phoenix Arizona	11.02
+10/14/2023	Pride Gas	Phoenix Arizona	64.00
+10/15/2023	Amazon	Phoenix Arizona	16.11
+10/15/2023	Carwash	Phoenix Arizona	13.00
+10/17/2023	CenturyLink	Phoenix Arizona	49.00
+10/17/2023	Metro	Phoenix Arizona	2.00
+10/18/2023	AmericanFivestar	Phoenix Arizona	300.00
+10/19/2023	Metro	Phoenix Arizona	2.00
+10/20/2023	Walmart	Phoenix Arizona	72.86
+10/20/2023	PandaExpress	Phoenix Arizona	10.49
+10/21/2023	Little Caesars	Phoenix Arizona	17.27
+10/21/2023	BaskinRobins	Phoenix Arizona	36.74
+10/21/2023	BaskinRobins	Phoenix Arizona	4.31
+10/21/2023	Frys	Phoenix Arizona	10.75
+10/22/2023	APS(Power)	Phoenix Arizona	131.77
+10/22/2023	LinsGrandBuffet	Phoenix Arizona	17.21
+10/27/2023	PandaExpress	Phoenix Arizona	10.49
+10/27/2023	Walmart	Phoenix Arizona	27.07
+10/27/2023	BoardgameArena	Phoenix Arizona	5.00
+10/28/2023	99CentStore	Phoenix Arizona	4.59
+10/28/2023	Walmart	Phoenix Arizona	8.63
+10/28/2023	Chevron	Phoenix Arizona	2.04
+10/31/2023	Frys	Phoenix Arizona	12.63
+11/3/2023	Shell	Phoenix Arizona	53.00
+11/3/2023	HarkinsTheatre	Phoenix Arizona	42.75
+11/3/2023	Barbershop	Phoenix Arizona	30.00
+11/3/2023	Circle K	Phoenix Arizona	1.51
+11/3/2023	LinsGrandBuffet	Phoenix Arizona	17.21
+11/3/2023	Walmart	Phoenix Arizona	1.83
+11/3/2023	Circle K	Phoenix Arizona	9.73
+11/4/2023	Metro	Phoenix Arizona	2.00
+11/4/2023	United Airlines	Phoenix Arizona	35.00
+11/10/2023	Eagles Nest Pizza	Red Bluff	31.37
+11/14/2023	T-Mobile	Red Bluff	20.00
+11/17/2023	CenturyLink	Red Bluff	49.00
+11/20/2023	Dollar Tree	Red Bluff	5.32
+11/20/2023	Headies pizza and Po	Red Bluff	37.25
+11/21/2023	McDonalds	Red Bluff	5.09
+11/21/2023	Dollar Tree	Red Bluff	1.35
+11/24/2023	APS(Power)	Phoenix Arizona	114.71
+11/24/2023	SWGas	Phoenix Arizona	25.54
+11/25/2023	home depot	Red Bluff	11.94
+11/27/2023	BoardgameArena	Red Bluff	5.00
+11/27/2023	BaskinRobins	Red Bluff	8.99
+11/27/2023	home depot	Red Bluff	7.80
+11/28/2023	Shell	Red Bluff	53.00
+11/28/2023	Dollar Tree	Red Bluff	3.94
+12/1/2023	HemiSync	Red Bluff	565.95
+12/2/2023	Shell	Red Bluff	1.95
+12/8/2023	OneStopGas&Food	Red Bluff	2.60
+12/14/2023	T-Mobile	Red Bluff	20.00
+12/17/2023	CenturyLink	Red Bluff	49.00
+12/18/2023	BaskinRobins	Red Bluff	9.89
+12/22/2023	BaskinRobins	Red Bluff	8.99
+12/23/2023	FoodMaxx	Red Bluff	2.79
+12/27/2023	BoardgameArena	Red Bluff	5.00
+12/29/2023	FoodMaxx	Red Bluff	2.49
+12/29/2023	APS(Power)	Phoenix Arizona	27.13
+12/29/2023	SWGas	Phoenix Arizona	21.16
+12/30/2023	Luigis	Red Bluff	10.48
+1/1/2024	Prime Cinemas	Red Bluff	4.75
+1/3/2024	KingleyNorthLapidary	Red Bluff	102.45
+1/7/2024	FoodMaxx	Red Bluff	8.37
+1/12/2024	Falling Prices Red Bluff	Red Bluff	9.00
+1/14/2024	T-Mobile	Red Bluff	20.00
+1/16/2024	SWGas	Phoenix Arizona	25.51
+1/17/2024	APS(Power)	Phoenix Arizona	30.14
+1/17/2024	CenturyLink	Phoenix Arizona	49.00
+1/21/2024	Shell	Phoenix Arizona	2.99
+1/22/2024	OReilly Auto Parts	Phoenix Arizona	19.45
+1/23/2024	Pride Gas	Phoenix Arizona	30.00
+1/23/2024	Walmart	Phoenix Arizona	44.24
+1/23/2024	Ace Hardware	Phoenix Arizona	3.89
+1/24/2024	Culvers	Phoenix Arizona	32.94
+1/24/2024	Culvers	Phoenix Arizona	6.80
+1/24/2024	LinsGrandBuffet	Phoenix Arizona	62.64
+1/24/2024	LinsGrandBuffet	Phoenix Arizona	17.64
+1/26/2024	Staples	Phoenix Arizona	0.27
+1/27/2024	BoardgameArena	Phoenix Arizona	5.00
+1/29/2024	Luigis	Red Bluff	43.16
+1/31/2024	Ramos Donut House	Red Bluff	2.68
+2/3/2024	Walmart	Red Bluff	56.38
+2/6/2024	Walmart	Red Bluff	2.26
+2/6/2024	Dollar Tree	Red Bluff	2.50
+2/7/2024	Chevron	Red Bluff	49.01
+2/10/2024	Dollar Tree	Red Bluff	2.50
+2/10/2024	Falling Prices Red Bluff	Red Bluff	0.27
+2/11/2024	USPS	Red Bluff	1.10
+2/11/2024	APS(Power)	Red Bluff	49.04
+2/12/2024	Chevron	Red Bluff	42.00
+2/12/2024	Hampton Inn	Red Bluff	170.47
+2/14/2024	T-Mobile	Red Bluff	20.00
+2/17/2024	Dollar Tree	Red Bluff	7.50
+2/17/2024	CenturyLink	Phoenix Arizona	49.00
+2/17/2024	Falling Prices Red Bluff	Red Bluff	0.54
+2/17/2024	BaskinRobins	Red Bluff	8.99
+2/18/2024	OneStopGas&Food	Red Bluff	82.00
+2/18/2024	OneStopGas&Food	Red Bluff	126.66
+2/19/2024	Yubico	Red Bluff	63.43
+2/24/2024	BaskinRobins	Red Bluff	8.99
+2/25/2024	FoodMaxx	Red Bluff	7.38
+2/25/2024	OReilly Auto Parts	Red Bluff	16.44
+2/25/2024	APS(Power)	Phoenix Arizona	34.20
+2/25/2024	SWGas	Phoenix Arizona	34.20
+2/27/2024	Ramos Donut House	Red Bluff	13.81
+2/27/2024	IdentiGo Fingerprinting	Red Bluff	39.95
+2/27/2024	BoardgameArena	Red Bluff	5.00
+2/28/2024	Katrina Eglian Dentist	Red Bluff	257.00
+3/3/2024	OneStopGas&Food	Red Bluff	61.00
+3/8/2024	Ramos Donut House	Red Bluff	2.68
+3/8/2024	UPS	Red Bluff	15.00
+3/8/2024	Office Depot	Red Bluff	64.34
+3/9/2024	FoodMaxx	Red Bluff	5.58
+3/9/2024	BurritoBandito	Red Bluff	29.02
+3/9/2024	BaskinRobins	Red Bluff	8.99
+3/10/2024	OneStopGas&Food	Red Bluff	16.00
+3/14/2024	T-Mobile	Red Bluff	20.00
+3/16/2024	GrandBuffet	Red Bluff	52.00
+3/17/2024	BaskinRobins	Red Bluff	8.99
+3/22/2024	Dollar Tree	Red Bluff	25.1
+3/22/2024	BaskinRobins	Red Bluff	20.00
+3/23/2024	Dollar Tree	Red Bluff	5
+3/23/2024	Prime Cinemas	Red Bluff	1.5
+3/23/2024	OneStopGas&Food	Red Bluff	34.00
+3/24/2024	Dysney Plus	Red Bluff	13.99
+3/27/2024	BoardgameArena	Red Bluff	5.00
+3/29/2024	Luigis	Red Bluff	62.14
+3/30/2024	BurritoBandito	Red Bluff	14.51
+4/3/2024	FoodMaxx	Red Bluff	6.95
+4/3/2024	OneStopGas&Food	Red Bluff	34.00
+4/3/2024	WoodlandFuelStop	Red Bluff	72.00
+4/3/2024	Hampton Inn	Red Bluff	153.85
+4/7/2024	KopperKettleCafe	Red Bluff	61.52
+4/13/2024	Ramos Donut House	Red Bluff	2.68
+4/13/2024	Chevron	Red Bluff	3.98
+4/15/2024	T-Mobile	Red Bluff	20
+4/20/2024	Chevron	Red Bluff	73
+4/20/2024	JiffyLube	Red Bluff	144.78
+4/20/2024	Red Lobster	Red Bluff	87
+4/22/2024	Chevron	Red Bluff	19.00
+4/25/2024	Dysney Plus	Red Bluff	13.99
+4/26/2024	BoardgameArena	Red Bluff	5
