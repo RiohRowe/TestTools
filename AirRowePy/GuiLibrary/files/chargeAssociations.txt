@@ -1,0 +1,89 @@
+GROCERY	RESTAURANT	FRIVILOUS	CAR	UTILITIES	FOOD	AUTOREPAIR	RENT
+Walmart	Taco Bell	Staples	Circle K	APS(Power)	Walmart	AmericanFivestar	Dave(DecRent)+Deposit
+Frys	KFC	HarkinsTheatre	AutoZone	CenturyLink	Frys	DiscountTire	Dave(JanRent)
+Safeway	Dunkin Donuts	ModeWorl	Chevron	SWGas	Safeway	Auto-Self-Repair	Dave(FebRent)
+Sprouts	LittleCaesars	SmoLing	MissionPalmsLot	T-Mobile	Sprouts	PickAndPull	Dave(MarRent)
+Dollar Tree	InNOut	GoodWill	Arco Gasoline		Dollar Tree	JiffyLube	Dave(AprRent)
+99CentStore	Olive Garden	FatCats	Shell		99CentStore		Dave(MayRent)
+Walgreens	Dairy Queen	Imagine3D	Sky Harbor Intl		Walgreens		Dave(JunRent)
+Target	PandaExpress	Reynolds	JessesFoodMart		Target		Dave(JulRent)
+DollarTree	JackInTheBox	Apollo Cleaners	Frys Gas		DollarTree		Dave(AugRent)
+Food City	Osaka	GolfLand	OReilly Auto Parts		Food City		Dave(SepRent)
+GlacierWaterVending	RainbowDonuts	USPS	CarpartsCOM		GlacierWaterVending		Dave(OctRent)
+Raleys	Little Caesars	UPS Store	QTGasStation		Raleys		Dave(NovRent)
+Chubby Chipmunk	JimmyJohns	DeLa	CheapNEasyTrafficSchool		Chubby Chipmunk		Dave(DecRent)
+CandyShop	Subway	TotalElement	Conco		CandyShop		Dave(Apr-AugRent)
+Powell'sSweetShop	Los Reyes De La Torta	LoPl	Marathon Gas		Powell'sSweetShop		Dave(May-AugRent)
+Bashas	Chipotle	Ebay	QuikTripGas		Bashas		Dave(Sep-FebRent)
+FoodMaxx	McDonalds	SkateLand	WoodlandFuelStop			
+	Salut	DKC DIGI KEY CORP			Taco Bell	
+	MapleGarden	Patreon			KFC	
+	BaskinRobins	SUBSCRIBESTAR			Dunkin Donuts	
+	Arizona Donut Company	OneStopGas&Food			LittleCaesars	
+	Casa Ramos	home depot			InNOut	
+	Sharis	Oculus			Olive Garden	
+	Pizza Hut	Dysney Plus			Dairy Queen	
+	Round Table	Mount Shasta Ski Park			PandaExpress	
+	Lassen Mineral Lodge	Tomasini BlackSmithing			JackInTheBox	
+	Ramos Donut House	Online Metal			Osaka	
+	Two Buds BBQ	Amazon			RainbowDonuts	
+	Palomino Room	SQRedding			Little Caesars	
+	Bogeys Café	Prime Cinemas			JimmyJohns	
+	Papa Murphys	CheckForCash			Subway	
+	Koi Palace	Fair			Los Reyes De La Torta	
+	PeterPiperPizza	Allegent Air			Chipotle	
+	OrganStopPizza	Gaumers			McDonalds	
+	TexasRoadhouse	Metro			Salut	
+	BurritoBandito	Tanerite			MapleGarden	
+	Ikkyu	KhaiHoanRestaurant			BaskinRobins	
+	RBAirport	NewAsianExpress			Arizona Donut Company	
+	Commons	Aurora Illustration			Casa Ramos	
+	Zambris	LandisCyclery			Sharis	
+	NauticalNellies	PersonalPreference			Pizza Hut	
+	Wendys	MesaMarket			Round Table	
+	CoastVictoriaHote	SwingInASafari			Lassen Mineral Lodge	
+	Steamship Grill	BurbankAirportFood			Ramos Donut House	
+	Luigis	CVS			Two Buds BBQ	
+	Thai House	Harbor Freight			Palomino Room	
+	That Place	Credit			Bogeys Café	
+	Caldwell County BBQ	WildfireLighting			Papa Murphys	
+	PeterChus	Ecrater			Koi Palace	
+	OtroLLaTaqueria	EconomyCandy			PeterPiperPizza	
+	Burger King	StateTheatre			OrganStopPizza	
+	Cke Pinetop Brewing	Zorbas			TexasRoadhouse	
+	CharlieClarks	Youtube			BurritoBandito	
+	Culvers	Dri Crucial			Ikkyu	
+	ChanpenThaiCuisine	BoardgameArena			RBAirport	
+	Dennys	Ace Hardware			Commons	
+	LinsGrandBuffet	MEC			Zambris	
+	Eagles Nest Pizza	CostVictoriaHote			NauticalNellies	
+	Headies pizza and Po	Spa			Wendys	
+	GrandBuffet	PuzzleLab			CoastVictoriaHote	
+	KopperKettleCafe	EvSe			Steamship Grill	
+	Red Lobster		XrLLC			Luigis	
+		Barbershop			Thai House	
+		HopOnHopOff			That Place	
+		ValleyCinema			Caldwell County BBQ	
+		MatrixCardsGames			PeterChus	
+		Pride Gas			OtroLLaTaqueria	
+		HornBlasters			Burger King	
+		RenesanceFestival			Cke Pinetop Brewing	
+		UVBeast			CharlieClarks	
+		Recreation.gov			Culvers	
+		Gilbert4THJuly			ChanpenThaiCuisine	
+		Lowes			Dennys	
+		Batteries Plus Bulbs			LinsGrandBuffet	
+		Bga Trial Over			Eagles Nest Pizza	
+		UntamedConfections			Headies pizza and Po	
+		CoyoteCountrySeason				
+		Carwash				
+		KingleyNorthLapidary				
+		HemiSync				
+		United Airlines				
+		Falling Prices Red Bluff				
+		Hampton Inn				
+		Yubico				
+		IdentiGo Fingerprinting				
+		Katrina Eglian Dentist				
+		UPS				
+		Office Depot				

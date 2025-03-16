@@ -1,10 +1,7 @@
 import tkinter
 from math import floor
 
-from Tools.demo.ss1 import cellname
-
 from AirRowePy.GuiLibrary.Frames.FrameWrapper import GridFrame
-from AirRowePy.GuiLibrary.ModalFrames.WigitFactory import WigitFactory
 
 class TextEntryFrame(GridFrame):
     # elements structure:

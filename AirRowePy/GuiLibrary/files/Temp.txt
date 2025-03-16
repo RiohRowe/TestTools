@@ -1,0 +1,17 @@
+Dave(DecRent)+Deposit
+Dave(JanRent)
+Dave(FebRent)
+Dave(MarRent)
+Dave(AprRent)
+Dave(MayRent)
+Dave(JunRent)
+Dave(JulRent)
+Dave(AugRent)
+Dave(SepRent)
+Dave(OctRent)
+Dave(NovRent)
+Dave(DecRent)
+Dave(Apr-AugRent)
+Dave(May-AugRent)
+Dave(Sep-FebRent)
+

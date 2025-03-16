@@ -1,5 +1,4 @@
 import os.path
-import tkinter
 
 from AirRowePy.GuiLibrary.ModalFrames.ModalWrapper import ModalWrapper
 from AirRowePy.GuiLibrary.ModalFrames.modalModules.AddToListModalComponents.AssignValuesModal.AssignValuesToMapModal import \
