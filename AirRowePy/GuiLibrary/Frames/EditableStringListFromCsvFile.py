@@ -496,6 +496,6 @@ class EditableStringListFromFileComponent(GridFrame):
         self.fullRefresh()
         print("file loaded")
     def saveToFile(self):
-        self.fm.saveTableFile(self.fileName)
+        self.fm.saveTableFile(self.fileName, self.listContent)
         print("file saved")
 
