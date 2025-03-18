@@ -498,6 +498,7 @@ class RowTranslatorTableFrame(GridFrame):
             values.append({})
             for header in headers.keys():
                 values[idx][header] = headers[header][SAMPLE_OUT_LB][VAR].get()
+        print("printValues="+str(values))
         return values
 
     def resolveThis(self, catMap):
