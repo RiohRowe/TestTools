@@ -4,8 +4,8 @@ Frys	KFC	HarkinsTheatre	AutoZone	CenturyLink	Frys	DiscountTire	Dave(JanRent)
 Safeway	Dunkin Donuts	ModeWorl	Chevron	SWGas	Safeway	Auto-Self-Repair	Dave(FebRent)
 Sprouts	LittleCaesars	SmoLing	MissionPalmsLot	T-Mobile	Sprouts	PickAndPull	Dave(MarRent)
 Dollar Tree	InNOut	GoodWill	Arco Gasoline		Dollar Tree	JiffyLube	Dave(AprRent)
-99CentStore	Olive Garden	FatCats	Shell		99CentStore		Dave(MayRent)
-Walgreens	Dairy Queen	Imagine3D	Sky Harbor Intl		Walgreens		Dave(JunRent)
+99CentStore	Olive Garden	FatCats	Shell		99CentStore	BobsTire	Dave(MayRent)
+Walgreens	Dairy Queen	Imagine3D	Sky Harbor Intl		Walgreens	AntelopeAutoRepair	Dave(JunRent)
 Target	PandaExpress	Reynolds	JessesFoodMart		Target		Dave(JulRent)
 DollarTree	JackInTheBox	Apollo Cleaners	Frys Gas		DollarTree		Dave(AugRent)
 Food City	Osaka	GolfLand	OReilly Auto Parts		Food City		Dave(SepRent)
@@ -16,17 +16,17 @@ CandyShop	Subway	TotalElement	Conco		CandyShop		Dave(Apr-AugRent)
 Powell'sSweetShop	Los Reyes De La Torta	LoPl	Marathon Gas		Powell'sSweetShop		Dave(May-AugRent)
 Bashas	Chipotle	Ebay	QuikTripGas		Bashas		Dave(Sep-FebRent)
 FoodMaxx	McDonalds	SkateLand	WoodlandFuelStop		Taco Bell		
-	Salut	DKC DIGI KEY CORP			KFC		
-	MapleGarden	Patreon			Dunkin Donuts		
-	BaskinRobins	SUBSCRIBESTAR			LittleCaesars		
-	Arizona Donut Company	OneStopGas&Food			InNOut		
-	Casa Ramos	home depot			Olive Garden		
-	Sharis	Oculus			Dairy Queen		
-	Pizza Hut	Dysney Plus			PandaExpress		
-	Round Table	Mount Shasta Ski Park			JackInTheBox		
-	Lassen Mineral Lodge	Tomasini BlackSmithing			Osaka		
-	Ramos Donut House	Online Metal			RainbowDonuts		
-	Two Buds BBQ	Amazon			Little Caesars		
+Kent'sMeats	Salut	DKC DIGI KEY CORP	FastTrackGas		KFC		
+SaveMart	MapleGarden	Patreon	Enterprise		Dunkin Donuts		
+Dakotamart	BaskinRobins	SUBSCRIBESTAR	PilotFlyingJ		LittleCaesars		
+URBISUNT - UNKNOWN	Arizona Donut Company	OneStopGas&Food	Parking		InNOut		
+PAY_OFF_CREDIT_CARD	Casa Ramos	home depot	76Gas		Olive Garden		
+	Sharis	Oculus	SinclairGas		Dairy Queen		
+	Pizza Hut	Dysney Plus	FuelsGas		PandaExpress		
+	Round Table	Mount Shasta Ski Park	ExxonMobilGas		JackInTheBox		
+	Lassen Mineral Lodge	Tomasini BlackSmithing	Phillips66Gas		Osaka		
+	Ramos Donut House	Online Metal	AdvanceAutoParts		RainbowDonuts		
+	Two Buds BBQ	Amazon	DiamondGas		Little Caesars		
 	Palomino Room	SQRedding			JimmyJohns		
 	Bogeys Café	Prime Cinemas			Subway		
 	Papa Murphys	CheckForCash			Los Reyes De La Torta		
@@ -61,29 +61,63 @@ FoodMaxx	McDonalds	SkateLand	WoodlandFuelStop		Taco Bell
 	GrandBuffet	PuzzleLab			Steamship Grill		
 	KopperKettleCafe	EvSe			Luigis		
 	Red Lobster	XrLLC			Thai House		
-		Barbershop			That Place		
-		HopOnHopOff			Caldwell County BBQ		
-		ValleyCinema			PeterChus		
-		MatrixCardsGames			OtroLLaTaqueria		
-		Pride Gas			Burger King		
-		HornBlasters			Cke Pinetop Brewing		
-		RenesanceFestival			CharlieClarks		
-		UVBeast			Culvers		
-		Recreation.gov			ChanpenThaiCuisine		
-		Gilbert4THJuly			Dennys		
-		Lowes			LinsGrandBuffet		
-		Batteries Plus Bulbs			Eagles Nest Pizza		
-		Bga Trial Over			Headies pizza and Po		
-		UntamedConfections					
-		CoyoteCountrySeason					
-		Carwash					
-		KingleyNorthLapidary					
-		HemiSync					
-		United Airlines					
-		Falling Prices Red Bluff					
-		Hampton Inn					
-		Yubico					
-		IdentiGo Fingerprinting					
-		Katrina Eglian Dentist					
-		UPS					
-		Office Depot					
+	AnchorSmokehouse	Barbershop			That Place		
+	Peppermill	HopOnHopOff			Caldwell County BBQ		
+	GrubHub	ValleyCinema			PeterChus		
+	GuadalajaraMexican	MatrixCardsGames			OtroLLaTaqueria		
+	KobeSteakhouse	Pride Gas			Burger King		
+	IndianSpiceRestaurant	HornBlasters			Cke Pinetop Brewing		
+	Swabbies	RenesanceFestival			CharlieClarks		
+	Cane'sChicken	UVBeast			Culvers		
+	SushiTime	Recreation.gov			ChanpenThaiCuisine		
+	SiskiyouBrewWorks	Gilbert4THJuly			Dennys		
+	PaneraBread	Lowes			LinsGrandBuffet		
+	RosatisPizza	Batteries Plus Bulbs			Eagles Nest Pizza		
+	TacoTruck	Bga Trial Over			Headies pizza and Po		
+	Biryani&ChaatIndian	UntamedConfections					
+	TeriyakiStation	CoyoteCountrySeason					
+	Breezys	Carwash					
+	FloydsFrosty	KingleyNorthLapidary					
+	KrakBoba	HemiSync					
+	UepHaloHawaiianBbq	United Airlines					
+	EiffelTowerVegas	Falling Prices Red Bluff					
+	MonAmiGabi	Hampton Inn					
+	CaesersBacchanalBuffet	Yubico					
+	HellsKitchen	IdentiGo Fingerprinting					
+	Nick'sCove	Katrina Eglian Dentist					
+	Chick-fil-A	UPS					
+	Cheyenne Crossing	Office Depot					
+	PineShack	QualityInn					
+	KwandoChineseBuffet	Netflix					
+	Joe'sCrabShack	GameStop					
+	MiamiAirportRestaurant	FixMyOculus.com					
+	SiamRiverCoral	RioHotel					
+	MiamiPizza	Motel6					
+		MeadviewMotel					
+		HolidayInn					
+		DollarGeneral					
+		DudaEnergy					
+		GrandCanyon					
+		DeathValleyNut&Candy					
+		Gopro.com					
+		OutdoorSupplyInc					
+		HiddenTreasureGoldfield					
+		IceLounge					
+		KissMinigolf					
+		ArteMuseum					
+		ILoveSugar					
+		DaysInn					
+		DriveInTheater					
+		GotLaptopParts.com					
+		CandyLand					
+		LotusUpEspresso					
+		TicketMaster					
+		TntFireworks					
+		Tucktec					
+		TrainMuseum					
+		CandyHeaven					
+		PiCh					
+		RoTo					
+		LaSh					
+		CnCo					
+		MiamiAirport					
