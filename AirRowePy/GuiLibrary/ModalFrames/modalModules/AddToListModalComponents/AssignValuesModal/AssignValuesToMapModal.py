@@ -56,6 +56,7 @@ class AssignValuesToMapModal(GridFrame):
         self.resolve = resolve
         self.strCompUtil = StringCompareUtil()
         self.suggestionPool = []
+        
         self.formComps={}
         self.fm = FileManager(FileManager.CATEGORY_FILES_PATH)
         self.render()
@@ -161,7 +162,7 @@ class AssignValuesToMapModal(GridFrame):
         return rankedSuggestions[0][ORIGINAL]
     def render(self):
         self.tableFrame = tkinter.Frame(self.frame)
-        self.tableFrame.grid(row=0, column=0, padx=0, pady=0, sticky="nsew")
+        self.tableFrame.grid(row=1, column=0, padx=0, pady=0, sticky="nsew")
         self.suggestionsFrame = tkinter.Frame(self.frame)
         self.suggestionsFrame.grid(row=0,column=1,padx=0,pady=0,sticky="nsew")
         #labels
@@ -220,7 +221,7 @@ class AssignValuesToMapModal(GridFrame):
 
         self.formComps[BUTTONS]={}
         self.formComps[BUTTONS][RESOLVE_BT]=tkinter.Button(self.frame, text="RESOLVE", command=self.resolve)
-        self.formComps[BUTTONS][RESOLVE_BT].grid(row=2,column=0,padx=0,pady=0,sticky="nsew",columnspan=2)
+        self.formComps[BUTTONS][RESOLVE_BT].grid(row=0,column=0,padx=0,pady=0,sticky="nsew",columnspan=2)
 
         #Setup suggestions
         self.suggestionComps = {
