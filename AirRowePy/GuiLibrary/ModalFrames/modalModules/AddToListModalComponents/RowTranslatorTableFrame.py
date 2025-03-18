@@ -490,7 +490,7 @@ class RowTranslatorTableFrame(GridFrame):
             self.setTracesTransTable(REGEX_TRANSLATION_TYPE, cIdx)
             self.setTracesElementTable(REGEX_TRANSLATION_TYPE, cIdx)
         #render buttons
-        resolveButton = tkinter.Button(self.buttonsFrame, text="RESOLVE", command=lambda *args:self.resolveThis(self.categoryMaps))
+        resolveButton = tkinter.Button(self.buttonsFrame, text="RESOLVE", command=lambda *args:self.resolveThis(self.categoryMaps.copy()))
         resolveButton.grid(row=0,column=0,padx=30,pady=10)
 
     def getValues(self):
