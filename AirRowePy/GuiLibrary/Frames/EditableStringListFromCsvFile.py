@@ -22,13 +22,13 @@ class EditableStringListFromFileComponent(GridFrame):
         grid["px"]=10
         grid["py"]=10
         super().__init__(parentFrame, grid=grid)
-
-        self.fileRootPath = os.path.abspath(fileRootPath) if fileRootPath else os.path.abspath(FileManager.MAIN_LIST_FILES_PATH)
+        self.fm=FileManager(FileManager.MAIN_LIST_FILES_PATH)
+        # self.fileRootPath = os.path.abspath(fileRootPath) if fileRootPath else os.path.abspath(FileManager.MAIN_LIST_FILES_PATH)
         self.fileName = fileName if fileName else os.listdir(self.fileRootPath)
         self.fileDelimiter = fileDelimiter if fileDelimiter else '\t'
 
         self.listName = listName
-        self.listContent = self.loadFile()
+        self.listContent = self.fm.loadTableFile(self.fileName)
         self.listComponents = []
         listContentLen=len(self.listContent)
         if len(self.listContent) > 0:
@@ -36,7 +36,7 @@ class EditableStringListFromFileComponent(GridFrame):
         else:
             self.headers = []
 
-        self.fm = FileManager(self.fileRootPath)
+        # self.fm = FileManager(self.fileRootPath)
 
         self.setRange(rangeStart,rangeEnd,rangeSize,listContentLen)
         self.titleFrame = tkinter.Frame(self.frame)
@@ -498,13 +498,4 @@ class EditableStringListFromFileComponent(GridFrame):
     def saveToFile(self):
         self.fm.saveTableFile(self.fileName)
         print("file saved")
-    def loadFile(self):
-        with open(os.path.join(self.fileRootPath, self.fileName), 'r') as datasource_file:
-            return list(csv.DictReader(datasource_file, delimiter=self.fileDelimiter))
-
-    def saveFile(self, listContents):
-        with open(os.path.join(self.fileRootPath, self.fileName), 'w', newline='') as datasource_file:
-            writer = csv.DictWriter(datasource_file, fieldnames=self.headers, delimiter=self.fileDelimiter)
-            writer.writeheader()
-            writer.writerows(listContents)
 
