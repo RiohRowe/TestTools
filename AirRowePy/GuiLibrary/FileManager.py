@@ -13,7 +13,7 @@ class FileManager:
     # CATEGORY_FILES_PATH = "files/categoryFiles/"
     MAIN_LIST_FILES_PATH = "files\\mainListFiles\\"
     TRANSLATION_MAP_FILES_PATH = "files\\translationMaps\\"
-    CATEGORY_FILES_PATH = "files\\categoryFile\\"
+    CATEGORY_FILES_PATH = "files\\categoryFiles\\"
     def __init__(self, directoryPath):
         self.directoryPath = PATH_TO_ROOT+directoryPath
     # Functions for finding file path.
