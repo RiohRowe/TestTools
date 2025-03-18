@@ -49,7 +49,9 @@ chargeListData = mergeSort(chargeListData)
 removeIdxList = []
 idx=0
 for charge in chargeListData:
-    if float(charge["Amount"])<0:
+    if charge["Amount"].__contains__(','):
+        charge["Amount"]=charge["Amount"].replace(',','')
+    if charge["Name"].startswith("PAY_") and float(charge["Amount"])<0:
         res=mb.askquestion('Remove Charge?', str(charge))
         if res == 'yes' :
             removeIdxList.append(idx)
