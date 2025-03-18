@@ -566,23 +566,28 @@ class RowTranslatorTableFrame(GridFrame):
     # %s for values in the parser
     def parseInText (self, parserStr, inText, values):
         checkVals = parserStr.split("%s")
+        print("CheckVals="+str(checkVals))
         if len(checkVals) == 1:
             values.append(inText)
+            print("CODE0")
             return True
         inTextIdx = 0
         cv = checkVals[0]
         if inText.startswith(cv):
             inTextIdx = len(cv)
         else:
+            print("CODE1")
             return False
         for checkVal in checkVals[1:]:
             inTextIdxNext = inText.find(checkVal, inTextIdx)
             if inTextIdxNext == -1:
                 values.append(inText[inTextIdx:])
+                print("CODE2")
                 return False
             else:
                 values.append(inText[inTextIdx:inTextIdxNext])
                 inTextIdx = inTextIdxNext
+        print("inText="+inText+"\tparserStr="+parserStr+"\tvalues="+str(values))
         return True
 
     def buildOutText(self, builderStr, values):
