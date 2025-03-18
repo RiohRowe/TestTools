@@ -6,7 +6,7 @@ from os.path import isfile, join, abspath
 # POINTS TO A FILE DIRECTORY
     # Allows writing and reading of contained files.
 
-# PATH_TO_ROOT = abspath(".")+"\\AirRowePy\\GuiLibrary\\"
+PATH_TO_ROOT = abspath(".")+"\\AirRowePy\\GuiLibrary\\"
 class FileManager:
     # MAIN_LIST_FILES_PATH = "files/mainListFiles/"
     # TRANSLATION_MAP_FILES_PATH = "files/translationMaps/"
