@@ -94,7 +94,7 @@ class RowTranslatorTableFrame(GridFrame):
         self.resolve = resolve
         self.updateHeaders=updateHeaders
 
-        self.numHidden = numElements-len(elements)
+        self.numHidden = len(elements)-numElements
         self.headerOrder = list(elements[0].keys()) if len(elements) > 0 else []
         self.numClippedRowsLabel = {}
 
