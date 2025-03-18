@@ -15,8 +15,8 @@ class FileManager:
     TRANSLATION_MAP_FILES_PATH = "files\\translationMaps\\"
     CATEGORY_FILES_PATH = "files\\categoryFiles\\"
     def __init__(self, directoryPath):
-        # self.directoryPath = PATH_TO_ROOT+directoryPath
-        self.directoryPath = directoryPath
+        self.directoryPath = PATH_TO_ROOT+directoryPath
+        # self.directoryPath = directoryPath
     # Functions for finding file path.
     def getFilesNoExt(self):
         fileNames = [self.trimExt(fileName) for fileName in listdir(self.directoryPath) if isfile(join(self.directoryPath, fileName))]
