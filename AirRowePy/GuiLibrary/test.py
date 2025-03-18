@@ -3,28 +3,20 @@ from AirRowePy.GuiLibrary.ModalFrames.ModalWrapper import ModalWrapper
 from AirRowePy.GuiLibrary.ModalFrames.modalModules.EditCategoryFileModule import EditCategoryFileModule, FILE_MANAGER, \
     FILE_NAME, FILE_EXT
 
-def parseInText(parserStr, inText, values):
-    checkVals = parserStr.split("%s")
-    if len(checkVals) == 1:
-        values.append(inText)
-        return True
-    inTextIdx = 0
-    pcv = checkVals[0]
-    if inText.startswith(pcv):
-        inTextIdx = len(pcv)
-    else:
-        return False
-    for checkVal in checkVals[1:]:
-        inTextIdxNext = len(inText) if checkVal=="" else inText.find(checkVal, inTextIdx)
-        if inTextIdxNext == -1:
-            values.append(inText[inTextIdx:])
-            return False
-        else:
-            values.append(inText[inTextIdx:inTextIdxNext])
-            inTextIdx = inTextIdxNext+len(checkVal)
-    return True
-
-parserStr= "%s/%s/%s"
+def buildOutText(builderStr, values):
+    if builderStr == "":
+        return "".join(values)
+    subStrs = []
+    for idx in range(0,len(values)):
+        subStrs.append("%s"+str(idx))
+    print("builderStr="+builderStr+"\nvalues=\t"+str(values)+"\nsubstr=\t"+str(subStrs))
+    for idx in range(len(values)-1, -1, -1):
+        builderStr=builderStr.replace(subStrs[idx], values[idx])
+    return builderStr
+apple = "apple"
+apple = apple.replace("pp","dd")
+print(apple)
+builderStr= "%s2/%s0/%s1"
 inText="03/17/2024"
-values=[]
-parseInText(parserStr,inText,values)
+values=["03","17","2024"]
+print(buildOutText(builderStr,values))

@@ -589,13 +589,13 @@ class RowTranslatorTableFrame(GridFrame):
     def buildOutText(self, builderStr, values):
         if builderStr == "":
             return "".join(values)
+        bs=builderStr
         subStrs = []
         for idx in range(0,len(values)):
             subStrs.append("%s"+str(idx))
-        print("builderStr="+builderStr+"\nvalues=\t"+str(values)+"\nsubstr=\t"+str(subStrs))
         for idx in range(len(values)-1, -1, -1):
-            builderStr.replace(subStrs[idx], values[idx])
-        return builderStr
+            bs=bs.replace(subStrs[idx], values[idx])
+        return bs
         # strBits = builderStr.split("%s")
         # # No %s found.
         # if len(strBits)==1:
