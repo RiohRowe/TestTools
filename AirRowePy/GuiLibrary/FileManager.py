@@ -8,12 +8,12 @@ from os.path import isfile, join, abspath
 
 # PATH_TO_ROOT = abspath(".")+"\\AirRowePy\\GuiLibrary\\"
 class FileManager:
-    MAIN_LIST_FILES_PATH = "files/mainListFiles/"
-    TRANSLATION_MAP_FILES_PATH = "files/translationMaps/"
-    CATEGORY_FILES_PATH = "files/categoryFiles/"
-    # MAIN_LIST_FILES_PATH = "files\\mainListFiles\\"
-    # TRANSLATION_MAP_FILES_PATH = "files\\translationMaps\\"
-    # CATEGORY_FILES_PATH = "files\\categoryFile\\"
+    # MAIN_LIST_FILES_PATH = "files/mainListFiles/"
+    # TRANSLATION_MAP_FILES_PATH = "files/translationMaps/"
+    # CATEGORY_FILES_PATH = "files/categoryFiles/"
+    MAIN_LIST_FILES_PATH = "files\\mainListFiles\\"
+    TRANSLATION_MAP_FILES_PATH = "files\\translationMaps\\"
+    CATEGORY_FILES_PATH = "files\\categoryFiles\\"
     def __init__(self, directoryPath):
         # self.directoryPath = PATH_TO_ROOT+directoryPath
         self.directoryPath = directoryPath
