@@ -132,7 +132,7 @@ class EditCategoryFileModule(GridFrame):
     def makeValListScroll(self, valArray, rowIdx, colIdx):
         scrollOuterFrame = tkinter.Frame(self.frame)
         scrollOuterFrame.grid(row=rowIdx,column=colIdx)
-        scrollComp = ScrollPackFrame(scrollOuterFrame, height=500, width=100)
+        scrollComp = ScrollPackFrame(scrollOuterFrame, height=500, width=125)
         scrollInnerFrame = scrollComp.getInnerFrame()
         compList = []
         listIdx=0
