@@ -515,7 +515,7 @@ class RowTranslatorTableFrame(GridFrame):
                 unTrackedVals=[]
                 for element in self.elements:
                     val = element[header][SAMPLE_OUT_LB][VAR].get()
-                    if not categoryElementList.__contains__(val):
+                    if not categoryElementList.__contains__(val) and not unTrackedVals.__contains__(val):
                         unTrackedVals.append(val)
                 if len(unTrackedVals)>0:
                     ModalWrapper(EditCategoryFileModule, "CategoryEditing", elements=unTrackedVals, otherOptions=file, handleResolveValue=lambda *args, value, cM=catMap:self.resolveThis(cM))
