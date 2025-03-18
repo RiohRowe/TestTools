@@ -9,7 +9,7 @@ from AirRowePy.GuiLibrary.Frames.EditableStringListFromCsvFile import EditableSt
 
 window = RootWindow("Hello World")
 mainFrame = window.getRoot()
-list = EditableStringListFromFileComponent(mainFrame, "ChargeList", fileName='chargeList.txt', fileRootPath=os.path.abspath('.'), fileDelimiter='\t', rangeEnd=0, rangeSize=4)
+list = EditableStringListFromFileComponent(mainFrame, "ChargeList", fileName='chargeList.txt', fileDelimiter='\t', rangeEnd=0, rangeSize=4)
 window.show()
 
 # modal = ModalWrapper(BaseAddElementsModalModule, "SomeModal", elements=[

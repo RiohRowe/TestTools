@@ -7,6 +7,8 @@ from AirRowePy.GuiLibrary.ModalFrames.ModalWrapper import ModalWrapper
 from AirRowePy.GuiLibrary.ModalFrames.WigitFactory import WigitFactory
 from AirRowePy.GuiLibrary.ModalFrames.modalModules.AddToListModalComponents.AssignValuesModal.AssignValuesToMapModal import \
     AssignValuesToMapModal
+from AirRowePy.GuiLibrary.ModalFrames.modalModules.EditCategoryFileModule import FILE_MANAGER, FILE_NAME, FILE_EXT, \
+    EditCategoryFileModule
 
 TITLE_LB = "H"
 PARSER_TB = "PT"
@@ -21,7 +23,8 @@ TRACE_ADD = "TA"
 TRACE_REMOVE = "TR"
 SET_DISABLE = "SD"
 ENABLE_HEADER_CB = "EC"
-CUSTOM_VALUE_MAP_DD = "DD"
+CUSTOM_VALUE_MAP_DD = "VD"
+CUSTOM_CATEGORY_MAP_DD = "CD"
 FRAME = "F"
 SHIFT_LEFT_BT = "L"
 SHIFT_RIGHT_BT = "R"
@@ -79,7 +82,7 @@ class RowTranslatorTableFrame(GridFrame):
     #       Header4: {...}
     #   }
     #]
-    def __init__(self, parent, elements, numElements, resolve, translations={}, grid={"r":0, "c":0, "px":0, "py":0}):
+    def __init__(self, parent, elements, numElements, resolve, updateHeaders, translations={}, grid={"r":0, "c":0, "px":0, "py":0}):
         super().__init__(parent, grid)
         self.translaterFrame = tkinter.Frame(self.frame)
         self.translaterFrame.grid(row=0, column=0)
@@ -89,6 +92,7 @@ class RowTranslatorTableFrame(GridFrame):
         self.buttonsFrame.grid(row=2, column=0, pady=3)
 
         self.resolve = resolve
+        self.updateHeaders=updateHeaders
 
         self.numHidden = numElements-len(elements)
         self.headerOrder = list(elements[0].keys()) if len(elements) > 0 else []
@@ -96,7 +100,9 @@ class RowTranslatorTableFrame(GridFrame):
 
         self.elements = elements
         self.translations = translations
+        self.categoryMaps={}
         for header in self.headerOrder:
+            self.categoryMaps[header] = None
             if self.translations.__contains__(header):
                 if not self.translations[header].__contains__(PARSER):
                     self.translations[header][PARSER] = ""
@@ -136,18 +142,19 @@ class RowTranslatorTableFrame(GridFrame):
         # }, ...]
         self.transTableComps = []
         self.tableHeaderLabelComps = []
-        self.fm = FileManager("./files/translationMaps")
+        self.vMapFM = FileManager(FileManager.TRANSLATION_MAP_FILES_PATH)
+        self.cMapFM = FileManager(FileManager.CATEGORY_FILES_PATH)
         self.render()
-    def addMap(self, headerName=None):
+    def addMap(self, header):
         emptyRowMap = {}
-        header = self.headerOrder[0]
+        print("HEADER="+header)
         for row in self.getValues():
             emptyRowMap[row[header]]=""
         fileName = header+"mapFile"
-        modal = ModalWrapper(AssignValuesToMapModal, "AddMapModal", elements=emptyRowMap, handleResolveValue=lambda *args, fn=fileName, value={}: self.fm.writeMapToFile(fn, value)),
+        modal = ModalWrapper(AssignValuesToMapModal, "AddMapModal", elements=emptyRowMap, handleResolveValue=lambda *args, fn=fileName, value={}: self.vMapFM.writeMapToFile(fn, value)),
     def editMap(self,fileName):
-        rowMap = self.fm.readFileToMap(fileName)
-        modal = ModalWrapper(AssignValuesToMapModal, "EditMapModal", elements=rowMap, handleResolveValue=lambda *args, fn=fileName, value={}: self.fm.writeMapToFile(fn, value)),
+        rowMap = self.vMapFM.readFileToMap(fileName)
+        modal = ModalWrapper(AssignValuesToMapModal, "EditMapModal", elements=rowMap, handleResolveValue=lambda *args, fn=fileName, value={}: self.vMapFM.writeMapToFile(fn, value)),
 
     def updateTransitions(self, header, parserStr=None, builderStr=None):
         idx = self.headerOrder.index(header)
@@ -213,6 +220,21 @@ class RowTranslatorTableFrame(GridFrame):
                 row[headerName][SAMPLE_OUT_LB][VAR].set(default)
 
 
+    def selectCategoryType(self, idx):
+        print("selecting category mapping")
+        header = self.headerOrder[idx]
+        fileName = self.transTableComps[idx][CUSTOM_CATEGORY_MAP_DD][VAR].get()
+        # normal
+        if fileName == NONE:
+            print("no category map")
+            self.categoryMaps[header] == None
+        else:
+            print("new translation map file selected:"+fileName)
+            self.categoryMaps[header]={
+                FILE_MANAGER:self.cMapFM,
+                FILE_NAME:fileName,
+                FILE_EXT:None
+            }
     def selectTranslationType(self, idx):
         headerName = self.headerOrder[idx]
         print("selecting translation mapping")
@@ -241,7 +263,7 @@ class RowTranslatorTableFrame(GridFrame):
         else:
             print("new translation map file selected:"+fileName)
             swtichTransType = self.translations[headerName][MAP] == NONE
-            self.translations[headerName][MAP]=self.fm.readFileToMap(fileName)
+            self.translations[headerName][MAP]=self.vMapFM.readFileToMap(fileName)
             print(self.translations[headerName][MAP])
             if swtichTransType:
                 self.transTableComps[idx][PARSER_TB][VAR].set("Num-UnMapped="+str(self.countUnmapped(idx)))
@@ -280,6 +302,8 @@ class RowTranslatorTableFrame(GridFrame):
         temp = self.transTableComps[idx]
         self.transTableComps[idx] = self.transTableComps[swapIdx]
         self.transTableComps[swapIdx] = temp
+        self.transTableComps[idx][CUSTOM_CATEGORY_MAP_DD][COMPONENT].grid_configure(column=idx+1)
+        self.transTableComps[swapIdx][CUSTOM_CATEGORY_MAP_DD][COMPONENT].grid_configure(column=swapIdx+1)
         self.transTableComps[idx][CUSTOM_VALUE_MAP_DD][COMPONENT].grid_configure(column=idx+1)
         self.transTableComps[swapIdx][CUSTOM_VALUE_MAP_DD][COMPONENT].grid_configure(column=swapIdx+1)
         self.transTableComps[idx][ENABLE_HEADER_CB][COMPONENT].grid_configure(column=idx+1)
@@ -322,9 +346,14 @@ class RowTranslatorTableFrame(GridFrame):
     def renderTranslator(self, idx, header):
         hComponents = {}
         rowIdx = 0
+        hComponents[CUSTOM_CATEGORY_MAP_DD] = {}
+        hComponents[CUSTOM_CATEGORY_MAP_DD][VAR] = tkinter.StringVar(value = NONE)
+        hComponents[CUSTOM_CATEGORY_MAP_DD][COMPONENT] = ttk.OptionMenu(self.translaterFrame, hComponents[CUSTOM_CATEGORY_MAP_DD][VAR], NONE, *[NONE, *self.cMapFM.getFilesNoExt()], command= lambda *args, i=idx: self.selectCategoryType(i))
+        hComponents[CUSTOM_CATEGORY_MAP_DD][COMPONENT].grid(row=rowIdx,column=idx+1,padx=2,pady=1)
+        rowIdx += 1
         hComponents[CUSTOM_VALUE_MAP_DD] = {}
         hComponents[CUSTOM_VALUE_MAP_DD][VAR] = tkinter.StringVar(value = NONE)
-        hComponents[CUSTOM_VALUE_MAP_DD][COMPONENT] = ttk.OptionMenu(self.translaterFrame, hComponents[CUSTOM_VALUE_MAP_DD][VAR], NONE, *[NONE,*self.fm.getFilesNoExt()], command= lambda *args, i=idx: self.selectTranslationType(i))
+        hComponents[CUSTOM_VALUE_MAP_DD][COMPONENT] = ttk.OptionMenu(self.translaterFrame, hComponents[CUSTOM_VALUE_MAP_DD][VAR], NONE, *[NONE, *self.vMapFM.getFilesNoExt()], command= lambda *args, i=idx: self.selectTranslationType(i))
         hComponents[CUSTOM_VALUE_MAP_DD][COMPONENT].grid(row=rowIdx,column=idx+1,padx=2,pady=1)
         rowIdx += 1
         hComponents[ENABLE_HEADER_CB] = {}
@@ -408,11 +437,14 @@ class RowTranslatorTableFrame(GridFrame):
     def render(self):
         # Render translation table
         rowIdx = 0
-        headerNameLabel = tkinter.Label(self.translaterFrame, text="TranslationType")
-        headerNameLabel.grid(row=rowIdx,column=0,sticky="nsew")
+        categoryFileLabel = tkinter.Label(self.translaterFrame, text="OptionalCategoryFile")
+        categoryFileLabel.grid(row=rowIdx,column=0,sticky="nsew")
         rowIdx += 1
-        headerNameLabel = tkinter.Label(self.translaterFrame, text="ToggleEnabled")
-        headerNameLabel.grid(row=rowIdx,column=0,sticky="nsew")
+        translationTypeLabel = tkinter.Label(self.translaterFrame, text="TranslationType")
+        translationTypeLabel.grid(row=rowIdx,column=0,sticky="nsew")
+        rowIdx += 1
+        toggleEnabledLabel = tkinter.Label(self.translaterFrame, text="ToggleEnabled")
+        toggleEnabledLabel.grid(row=rowIdx,column=0,sticky="nsew")
         rowIdx += 1
         headerNameLabel = tkinter.Label(self.translaterFrame, text="headerName")
         headerNameLabel.grid(row=rowIdx,column=0,sticky="nsew")
@@ -454,7 +486,7 @@ class RowTranslatorTableFrame(GridFrame):
             self.setTracesTransTable(REGEX_TRANSLATION_TYPE, cIdx)
             self.setTracesElementTable(REGEX_TRANSLATION_TYPE, cIdx)
         #render buttons
-        resolveButton = tkinter.Button(self.buttonsFrame, text="RESOLVE", command=self.resolve)
+        resolveButton = tkinter.Button(self.buttonsFrame, text="RESOLVE", command=lambda *args:self.resolveThis(self.categoryMaps))
         resolveButton.grid(row=0,column=0,padx=30,pady=10)
 
     def getValues(self):
@@ -465,25 +497,24 @@ class RowTranslatorTableFrame(GridFrame):
                 values[idx][header] = headers[header][SAMPLE_OUT_LB][VAR].get()
         return values
 
-
-        # def reRender(self):
-        #     for idx, header in enumerate(self.headerOrder):
-        #         hComponents = {}
-        #         hComponents[TITLE_LB] = tkinter.Label(text=header)
-        #         hComponents[TITLE_LB].grid(row=0,column=idx,padx=2,pady=1)
-        #         hComponents[PARSER_TB][VAR] = tkinter.StringVar(value=self.translations[header][PARSER])
-        #         hComponents[PARSER_TB][COMPONENT] = tkinter.Entry(textvariable=hComponents[PARSER_TB][VAR])
-        #         hComponents[PARSER_TB][COMPONENT].grid(row=1,column=idx,padx=2,pady=1)
-        #         hComponents[BUILDER_TB][VAR] = tkinter.StringVar(value=self.translations[header][BUILDER])
-        #         hComponents[BUILDER_TB][COMPONENT] = (tkinter.Entry(textvariable=hComponents[BUILDER_TB][VAR]))
-        #         hComponents[BUILDER_TB][COMPONENT].grid(row=2,column=idx,padx=2,pady=1)
-        #         hComponents[SAMPLE_IN_TB][VAR] = tkinter.StringVar(value="HelloWorld")
-        #         hComponents[SAMPLE_IN_TB][COMPONENT] = tkinter.Entry(textvariable=hComponents[SAMPLE_IN_TB][VAR])
-        #         hComponents[SAMPLE_IN_TB][COMPONENT].grid(row=3,column=idx,padx=2,pady=1)
-        #         hComponents[SAMPLE_OUT_LB][VAR] = tkinter.StringVar(value=self.translate(self.translations[header][PARSER], self.translations[header][BUILDER], hComponents[SAMPLE_IN_TB][VAR].get()))
-        #         hComponents[SAMPLE_OUT_LB][COMPONENT] = (tkinter.Label(textvariable=hComponents[SAMPLE_OUT_LB][VAR]))
-        #         hComponents[SAMPLE_OUT_LB][COMPONENT].grid(row=4,column=idx,padx=2,pady=1)
-        #         self.subComponents.append(hComponents)
+    def resolveThis(self, catMap):
+        for header in self.headerOrder:
+            if not catMap[header] == None:
+                file = self.categoryMaps[header]
+                catMap[header]=None
+                categoryMap = file[FILE_MANAGER].loadCategoryFile(file[FILE_NAME], ext=FILE_EXT)
+                categoryElementList = []
+                for arr in categoryMap.values():
+                    categoryElementList+=arr
+                unTrackedVals=[]
+                for element in self.elements:
+                    val = element[header][SAMPLE_OUT_LB][VAR].get()
+                    if not categoryElementList.__contains__(val):
+                        unTrackedVals.append(val)
+                if len(unTrackedVals)>0:
+                    ModalWrapper(EditCategoryFileModule, "CategoryEditing", elements=unTrackedVals, otherOptions=file, handleResolveValue=lambda *args, value, cM=catMap:self.resolveThis(cM))
+                    return
+        self.resolve()
 
     def removeTracesTransTable(self, columnIdx):
         for trace in self.transTableComps[columnIdx][PARSER_TB][TRACES]:
@@ -615,6 +646,7 @@ class RowTranslatorTableFrame(GridFrame):
                 self.translations.pop(self.headerOrder[idx])
                 self.removeTracesTransTable(idx)
                 self.transTableComps[idx][ENABLE_HEADER_CB][COMPONENT].destroy()
+                self.transTableComps[idx][CUSTOM_CATEGORY_MAP_DD][COMPONENT].destroy()
                 self.transTableComps[idx][CUSTOM_VALUE_MAP_DD][COMPONENT].destroy()
                 self.transTableComps[idx][ENABLE_HEADER_CB][COMPONENT].destroy()
                 self.transTableComps[idx][TITLE_LB][FRAME].destroy()
@@ -652,6 +684,7 @@ class RowTranslatorTableFrame(GridFrame):
             for idxc, headerName in enumerate(headers.keys()):
                 self.renderTableCell(idxr,idxc,headerName)
         self.headerOrder = newHeaderOrder
+        self.updateHeaders(self.headerOrder)
         #update hidden rows count
         self.numClippedRowsLabel[VAR] = tkinter.StringVar(value="..."+str(self.numHidden))
         #create new traces

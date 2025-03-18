@@ -6,14 +6,13 @@ class ModalWrapper():
     #   -Frame (container in window that holds components)
     def __init__(self, modalModule, title,
                  elements,
+                 otherOptions={},
                  handleResolveValue=lambda *args, value: print("returnValue=\n"+str(value)+"\n"),
                  grid={"r": 0, "c": 0, "px": 0, "py": 0}):
         self.window = tkinter.Toplevel()
         self.window.title(title)
-        print("ELEMENTS1=\n"+str(elements)+"\n\n")
-        self.modalModule = modalModule(self.window,self.resolve,elements,grid)
+        self.modalModule = modalModule(self.window,self.resolve,elements,grid=grid,otherOptions=otherOptions)
         self.handleResolve=handleResolveValue
-        print("MODAL_MODULE="+str(self.modalModule))
         self.show()
     def resolve(self):
         #   get values

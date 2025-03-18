@@ -51,7 +51,7 @@ class PackFrame:
         if not self.frame.grid_info():
             self.show()
 
-class ScrollGridFrame(PackFrame):
+class ScrollPackFrame(PackFrame):
     def getComponent(self, parent):
         self.outerFrame = tkinter.Frame(parent)
         self.outerFrame.pack(side='right', fill='both', expand=1)

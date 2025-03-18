@@ -4,7 +4,7 @@ import tkinter
 
 from unicodedata import numeric
 
-from .FrameWrapper import GridFrame, ScrollGridFrame
+from .FrameWrapper import GridFrame, ScrollPackFrame
 from AirRowePy.GuiLibrary.Frames.EditableStringListFromCsvFileSubComps.ObjectListComponent import objectListComponent
 
 #
@@ -54,7 +54,7 @@ class EditableStringListFromFileComponent(GridFrame):
         self.headerFrame.grid(row=1,column=0,padx=(30,10),pady=0)
         self.outerlistFrame = tkinter.Frame(self.frame)
         self.outerlistFrame.grid(row=2,column=0,padx=10,pady=0)
-        self.scrollFrameWrapper = ScrollGridFrame(self.outerlistFrame, width=(134*len(self.headers))+40+200)
+        self.scrollFrameWrapper = ScrollPackFrame(self.outerlistFrame, width=(134 * len(self.headers)) + 40 + 200)
         self.scrollFrame = self.scrollFrameWrapper.getInnerFrame()
         self.listFrame = tkinter.Frame(self.scrollFrame)
         self.listFrame.grid(row=1,column=0,padx=10,pady=0)

@@ -2,7 +2,8 @@ import tkinter.ttk
 from math import ceil
 
 from AirRowePy.GuiLibrary.FileManager import FileManager
-from AirRowePy.GuiLibrary.Frames.FrameWrapper import GridFrame
+from AirRowePy.GuiLibrary.Frames.FrameWrapper import GridFrame, ScrollPackFrame
+from AirRowePy.GuiLibrary.ModalFrames.modalModules.EditCategoryFileModule import SCROLL, INNER_FRAME
 from AirRowePy.GuiLibrary.StringCompareUtil import StringCompareUtil
 
 # entry structure:
@@ -10,26 +11,29 @@ from AirRowePy.GuiLibrary.StringCompareUtil import StringCompareUtil
     #    "key1": None,
     #    "key2": None
     #}
-HEADERS = "H"
-BODY = "B"
-BUTTONS = "b"
-VAR = "V"
-COMPONENT= "C"
-KEY_LB="K"
-VALUE_TB= "v"
+HEADERS='H'
+BODY='B'
+BUTTONS='b'
+VAR='V'
+COMPONENT='C'
+KEY_LB='K'
+VALUE_TB='v'
 VALUE_LB="vl"
 SUGGESTION_BT="SB"
-FRAME="F"
-TRACES="T"
-RESOLVE_BT="R"
+FRAME='F'
+TRACES='T'
+RESOLVE_BT='R'
+SCROLL='s'
+INNER_FRAME='I'
+OUTTER_FRAME='o'
 NONE = None
 
 SELECT_SUGGESTIONS_DD="SD"
 SELECT_SUGGESTION_LB = "SL"
 SCORE = "S"
 
-ORIGINAL = "O"
-ALPHA_SORTED = "A"
+ORIGINAL = 'O'
+ALPHA_SORTED = 'A'
 
 
 bgColor1 = "#FFFFEE"
@@ -42,7 +46,8 @@ suggestionWidth = 60
 
 class AssignValuesToMapModal(GridFrame):
     def __init__(self, parent,resolve,
-                 elements=[{"h1":{"type": "t", "editable": False, "defaultValue": "defaultValue"}}],
+                 elements=[{"apple":"oranges","peas":"carrots"}],
+                 otherOptions={},
                  grid={"r": 0, "c": 0, "px": 0, "py": 0}) -> None:
         super().__init__(parent, grid=grid)
         self.elements = elements
@@ -52,7 +57,7 @@ class AssignValuesToMapModal(GridFrame):
         self.strCompUtil = StringCompareUtil()
         self.suggestionPool = []
         self.formComps={}
-        self.fm = FileManager("./files/existing_categories")
+        self.fm = FileManager(FileManager.CATEGORY_FILES_PATH)
         self.render()
 
     def updateSuggestion(self, key):
@@ -113,7 +118,7 @@ class AssignValuesToMapModal(GridFrame):
             for idx in range(oldSize,newSize):
                 suggestionComps = {}
                 suggestionComps[VAR] = tkinter.StringVar(value=self.suggestionPool[idx][ORIGINAL])
-                suggestionComps[COMPONENT] = tkinter.Label(self.suggestionsFrame, textvariable=suggestionComps[VAR])
+                suggestionComps[COMPONENT] = tkinter.Label(self.suggestionComps[SCROLL][INNER_FRAME], textvariable=suggestionComps[VAR])
                 suggestionComps[COMPONENT].grid(row=idx+1,column=0,padx=0,pady=0,sticky="nsew")
                 self.suggestionComps[SELECT_SUGGESTION_LB].append(suggestionComps)
 
@@ -128,7 +133,12 @@ class AssignValuesToMapModal(GridFrame):
             for suggestion in self.formComps[BODY][SUGGESTION_BT]:
                 suggestion[COMPONENT].destroy()
             return
-        self.suggestionPool = self.objListSort([self.breakdownWord(word) for word in self.fm.readFileToList(selectedFile, bodyOnly=True)],[ALPHA_SORTED])
+        suggestions = self.fm.readFileToList(selectedFile, bodyOnly=True)
+        uniqueSuggestions = []
+        for word in suggestions:
+            if not uniqueSuggestions.__contains__(word):
+                uniqueSuggestions.append(word)
+        self.suggestionPool = self.objListSort([self.breakdownWord(word) for word in uniqueSuggestions],[ALPHA_SORTED])
         #updateSuggestionPool
         self.updateSuggestionPoolComponents()
         #updateSuggestions
@@ -215,16 +225,22 @@ class AssignValuesToMapModal(GridFrame):
         #Setup suggestions
         self.suggestionComps = {
             SELECT_SUGGESTIONS_DD:{},
+            SCROLL:{},
             SELECT_SUGGESTION_LB:[]
         }
         self.suggestionComps[SELECT_SUGGESTIONS_DD][VAR] = tkinter.StringVar(value=NONE)
         self.suggestionComps[SELECT_SUGGESTIONS_DD][COMPONENT] = tkinter.ttk.OptionMenu(self.suggestionsFrame, self.suggestionComps[SELECT_SUGGESTIONS_DD][VAR], "NONE", *["NONE",*self.fm.getFilesNoExt()], command=self.handleSelectSuggestionsFile)
         self.suggestionComps[SELECT_SUGGESTIONS_DD][COMPONENT].grid(row=0,column=0,padx=0,pady=0,sticky="nsew")
-        rIdx = 1
+        
+        self.suggestionComps[SCROLL][OUTTER_FRAME]=tkinter.Frame(self.suggestionsFrame)
+        self.suggestionComps[SCROLL][COMPONENT]=ScrollPackFrame(self.suggestionComps[SCROLL][OUTTER_FRAME],height=500, width=125)
+        self.suggestionComps[SCROLL][INNER_FRAME] = self.suggestionComps[SCROLL][COMPONENT].getInnerFrame()
+        self.suggestionComps[SCROLL][OUTTER_FRAME].grid(row=1,column=0,padx=0,pady=0,sticky="nsew")
+        rIdx = 0
         for wordMeta in self.suggestionPool:
             suggestionComps = {}
             suggestionComps[VAR] = tkinter.StringVar(value=wordMeta[ORIGINAL])
-            suggestionComps[COMPONENT] = tkinter.Label(self.suggestionsFrame, textvariable=suggestionComps[VAR])
+            suggestionComps[COMPONENT] = tkinter.Label(self.suggestionComps[SCROLL][INNER_FRAME], textvariable=suggestionComps[VAR])
             suggestionComps[COMPONENT].grid(row=rIdx,column=0,padx=0,pady=0,sticky="nsew")
             rIdx += 1
             self.suggestionComps[SELECT_SUGGESTION_LB].append(suggestionComps)

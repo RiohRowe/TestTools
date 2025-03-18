@@ -5,7 +5,7 @@ import tkinter
 from unicodedata import numeric
 
 from .EditableStringListFromCsvFileSubComps.ListExpandOptionsComponent import ListExpandOptionsComponent
-from .FrameWrapper import GridFrame, ScrollGridFrame
+from .FrameWrapper import GridFrame, ScrollPackFrame
 from AirRowePy.GuiLibrary.Frames.EditableStringListFromCsvFileSubComps.ObjectListComponent import objectListComponent
 from ..FileManager import FileManager
 from ..ModalFrames.ModalWrapper import ModalWrapper
@@ -15,7 +15,7 @@ from ..ModalFrames.modalModules.baseAddToListModalModule import BaseAddElementsM
 #
 class EditableStringListFromFileComponent(GridFrame):
 
-    def __init__(self, parentFrame, listName, fileName='', fileRootPath='', fileDelimiter='', grid=None, rangeStart=None, rangeEnd=None, rangeSize=None):
+    def __init__(self, parentFrame, listName, fileName='', fileRootPath=None, fileDelimiter='', grid=None, rangeStart=None, rangeEnd=None, rangeSize=None):
         self.listLabel = None
         if not type(grid) == {}.__class__:
             grid = {"r":0,"c":0}
@@ -23,7 +23,7 @@ class EditableStringListFromFileComponent(GridFrame):
         grid["py"]=10
         super().__init__(parentFrame, grid=grid)
 
-        self.fileRootPath = fileRootPath if fileRootPath else os.path.abspath('.')
+        self.fileRootPath = os.path.abspath(fileRootPath) if fileRootPath else os.path.abspath(FileManager.MAIN_LIST_FILES_PATH)
         self.fileName = fileName if fileName else os.listdir(self.fileRootPath)
         self.fileDelimiter = fileDelimiter if fileDelimiter else '\t'
 
@@ -49,7 +49,9 @@ class EditableStringListFromFileComponent(GridFrame):
         self.headerFrame.grid(row=1,column=0,padx=(30,10),pady=0)
         self.outerlistFrame = tkinter.Frame(self.frame)
         self.outerlistFrame.grid(row=2,column=0,padx=10,pady=0)
-        self.scrollFrameWrapper = ScrollGridFrame(self.outerlistFrame, width=(134*len(self.headers))+40+200)
+        self.appendButton = tkinter.Button(self.frame, text="Append", command=lambda *args: self.add(len(self.listContent)))
+        self.appendButton.grid(row=3,sticky="nsew")  
+        self.scrollFrameWrapper = ScrollPackFrame(self.outerlistFrame, width=(134 * len(self.headers)) + 40 + 200)
         self.scrollFrame = self.scrollFrameWrapper.getInnerFrame()
         self.listFrame = tkinter.Frame(self.scrollFrame)
         self.listFrame.grid(row=1,column=0,padx=10,pady=0)
@@ -343,7 +345,7 @@ class EditableStringListFromFileComponent(GridFrame):
         #append to global list
         self.listContent = self.listContent + newEntries
         oldRangeEnd = self.rangeEnd
-        self.rangeEnd = len(self.listContent)
+        self.rangeEnd = len(self.listContent)-1
 
         sizeIncrease = len(newEntries)
 
@@ -368,7 +370,7 @@ class EditableStringListFromFileComponent(GridFrame):
                 newGlobalIdx+=1
             self.listComponents = newCompList
             #Create and add remaining components.
-            for idx in range(oldLength,self.rangeEnd+1):
+            for idx in range(newGlobalIdx,self.rangeEnd+1):
                 self.listComponents.append(objectListComponent(
                     self.listFrame,
                     self.listContent[newGlobalIdx],
@@ -403,7 +405,7 @@ class EditableStringListFromFileComponent(GridFrame):
             defaultEntry[header]={
                 "type":"t",
                 "editable":True,
-                "defaultValue":self.listContent[idx][header]
+                "defaultValue":self.listContent[idx][header] if idx < len(self.listContent) else "n/a"
             }
             headerIdx+=1
         addElementsModal = ModalWrapper(BaseAddElementsModalModule, "addToListModal", [defaultEntry],
