@@ -150,6 +150,7 @@ class RowTranslatorTableFrame(GridFrame):
         emptyRowMap = {}
         print("HEADER="+header)
         for row in self.getValues():
+            print("ROW="+str(row))
             emptyRowMap[row[header]]=""
         fileName = header+"mapFile"
         modal = ModalWrapper(AssignValuesToMapModal, "AddMapModal", elements=emptyRowMap, handleResolveValue=lambda *args, fn=fileName, value={}: self.vMapFM.writeMapToFile(fn, value)),
@@ -496,9 +497,10 @@ class RowTranslatorTableFrame(GridFrame):
         values = []
         for idx, headers in enumerate(self.elements):
             values.append({})
+            print(headers)
             for header in headers.keys():
                 values[idx][header] = headers[header][SAMPLE_OUT_LB][VAR].get()
-        print("printValues="+str(values))
+        # print("printValues="+str(values))
         return values
 
     def resolveThis(self, catMap):
