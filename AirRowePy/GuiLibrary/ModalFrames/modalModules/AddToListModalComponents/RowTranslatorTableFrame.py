@@ -587,21 +587,24 @@ class RowTranslatorTableFrame(GridFrame):
 
     def buildOutText(self, builderStr, values):
         if builderStr == "":
-            bStr = ""
-            for val in values:
-                bStr+=val
-            return bStr
-        strBits = builderStr.split("%s")
-        # No %s found.
-        if len(strBits)==1:
-            return builderStr
-        sb=""
-        for idx, strBit in enumerate(strBits):
-            if idx < len(values):
-                sb+=strBit+values[idx]
-            else:
-                sb+=strBit
-        return sb
+            return "".join(values)
+        subStrs = []
+        for idx in range(0,len(values)):
+            subStrs.append("%s"+str(idx))
+        for idx in range(len(values)-1, -1, -1):
+            builderStr.replace(subStrs[idx], values[idx])
+        return builderStr
+        # strBits = builderStr.split("%s")
+        # # No %s found.
+        # if len(strBits)==1:
+        #     return builderStr
+        # sb=""
+        # for idx, strBit in enumerate(strBits):
+        #     if idx < len(values):
+        #         sb+=strBit+values[idx]
+        #     else:
+        #         sb+=strBit
+        # return sb
 
     def destroy(self):
         for element in self.elements:
