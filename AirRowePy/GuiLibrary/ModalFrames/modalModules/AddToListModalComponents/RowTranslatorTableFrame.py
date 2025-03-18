@@ -596,17 +596,6 @@ class RowTranslatorTableFrame(GridFrame):
         for idx in range(len(values)-1, -1, -1):
             bs=bs.replace(subStrs[idx], values[idx])
         return bs
-        # strBits = builderStr.split("%s")
-        # # No %s found.
-        # if len(strBits)==1:
-        #     return builderStr
-        # sb=""
-        # for idx, strBit in enumerate(strBits):
-        #     if idx < len(values):
-        #         sb+=strBit+values[idx]
-        #     else:
-        #         sb+=strBit
-        # return sb
 
     def destroy(self):
         for element in self.elements:
@@ -620,7 +609,6 @@ class RowTranslatorTableFrame(GridFrame):
         oldHlen = len(self.headerOrder)
         newHlen = len(elements[0])
         newHeaderOrder = list(elements[0].keys())
-
 
         #reset translations
         if newHlen > oldHlen: #Add to
@@ -683,8 +671,8 @@ class RowTranslatorTableFrame(GridFrame):
                 value[DESTROY]()
                 value[SAMPLE_OUT_LB][COMPONENT].destroy()
         #generate new table
-        self.numHidden = len(elements) - len(self.elements)
-        self.elements = elements[0:len(self.elements)]
+        self.numHidden = len(elements) - (len(self.elements)-self.numHidden)
+        self.elements = elements
         for idxr, headers in enumerate(self.elements):
             for idxc, headerName in enumerate(headers.keys()):
                 self.renderTableCell(idxr,idxc,headerName)
