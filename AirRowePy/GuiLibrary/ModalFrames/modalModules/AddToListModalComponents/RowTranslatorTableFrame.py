@@ -408,10 +408,11 @@ class RowTranslatorTableFrame(GridFrame):
             COMPONENT: headerLabel
         })
 
-    def renderTableCell(self, idxr, idxc, header):
+    def renderTableCell(self, idxr, idxc, header,shown):
         headers = self.elements[idxr]
         cellFrame = tkinter.Frame(self.tableFrame, background=bgColor1 if idxr%2 == 0 else bgColor2)
-        cellFrame.grid(row=idxr+1, column=idxc+1, padx=0, pady=0, sticky="nsew")
+        if shown:
+            cellFrame.grid(row=idxr+1, column=idxc+1, padx=0, pady=0, sticky="nsew")
         headers[header][FRAME] = cellFrame
         destroy, getValue, setValue, trace_add, trace_remove, set_disable, grid_configure = wigitFactory.getWidget(
                 headers[header]["type"], cellFrame,
@@ -469,14 +470,15 @@ class RowTranslatorTableFrame(GridFrame):
         for idx, header in enumerate(self.headerOrder):
             self.renderTableHeaderLabel(idx, header)
             # main table body
-        for idx in range(0, (self.numShown if len(self.elements) > self.numShown else len(self.elements))):
+        for idx in range(0, len(self.elements)):
             headers = self.elements[idx]
             # render row
             rowLabel = tkinter.Label(self.tableFrame, text="row-"+str(idx))
-            rowLabel.grid(row=idx+1,column=0,padx=0,pady=0, sticky="nsew")
+            if(idx<self.numShown):
+                rowLabel.grid(row=idx+1,column=0,padx=0,pady=0, sticky="nsew")
             for hIdx, header in enumerate(headers.keys()):
                 #render cell
-                self.renderTableCell(idx,hIdx,header)
+                self.renderTableCell(idx,hIdx,header, idx<self.numShown)
             # render omitted rows count
             self.numClippedRowsLabel[VAR] = tkinter.StringVar(value="..."+str(self.numHidden))
             self.numClippedRowsLabel[COMPONENT] = tkinter.Label(self.tableFrame, textvariable=self.numClippedRowsLabel[VAR])
@@ -675,14 +677,13 @@ class RowTranslatorTableFrame(GridFrame):
         self.numHidden = len(elements) - self.numShown
         self.elements = elements
         for idxr, headers in enumerate(self.elements):
-            if idxr > self.numShown:
-                break
             for idxc, headerName in enumerate(headers.keys()):
-                self.renderTableCell(idxr,idxc,headerName)
+                self.renderTableCell(idxr,idxc,headerName, idxr<self.numShown)
         self.headerOrder = newHeaderOrder
         self.updateHeaders(self.headerOrder)
         #update hidden rows count
         self.numClippedRowsLabel[VAR] = tkinter.StringVar(value="..."+str(self.numHidden))
+        self.numClippedRowsLabel[COMPONENT].grid(row=(len(self.elements) if len(self.elements) > self.numShown else self.numShown)+1)
         #create new traces
         if newHlen > oldHlen:
             for cIdx in range(oldHlen, newHlen):
