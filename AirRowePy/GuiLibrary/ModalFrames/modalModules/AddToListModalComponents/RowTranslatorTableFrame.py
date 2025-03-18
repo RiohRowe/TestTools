@@ -591,6 +591,7 @@ class RowTranslatorTableFrame(GridFrame):
         subStrs = []
         for idx in range(0,len(values)):
             subStrs.append("%s"+str(idx))
+        print("builderStr="+builderStr+"\nvalues=\t"+str(values)+"\nsubstr=\t"+str(subStrs))
         for idx in range(len(values)-1, -1, -1):
             builderStr.replace(subStrs[idx], values[idx])
         return builderStr
