@@ -93,7 +93,8 @@ class RowTranslatorTableFrame(GridFrame):
 
         self.resolve = resolve
         self.updateHeaders=updateHeaders
-
+        
+        self.numShown = numElements
         self.numHidden = len(elements)-numElements
         self.headerOrder = list(elements[0].keys()) if len(elements) > 0 else []
         self.numClippedRowsLabel = {}
@@ -468,7 +469,7 @@ class RowTranslatorTableFrame(GridFrame):
         for idx, header in enumerate(self.headerOrder):
             self.renderTableHeaderLabel(idx, header)
             # main table body
-        for idx in range(0, len(self.elements)):
+        for idx in range(0, (self.numShown if len(self.elements) > self.numShown else len(self.elements))):
             headers = self.elements[idx]
             # render row
             rowLabel = tkinter.Label(self.tableFrame, text="row-"+str(idx))
@@ -671,9 +672,11 @@ class RowTranslatorTableFrame(GridFrame):
                 value[DESTROY]()
                 value[SAMPLE_OUT_LB][COMPONENT].destroy()
         #generate new table
-        self.numHidden = len(elements) - (len(self.elements)-self.numHidden)
+        self.numHidden = len(elements) - self.numShown
         self.elements = elements
         for idxr, headers in enumerate(self.elements):
+            if idxr > self.numShown:
+                break
             for idxc, headerName in enumerate(headers.keys()):
                 self.renderTableCell(idxr,idxc,headerName)
         self.headerOrder = newHeaderOrder
