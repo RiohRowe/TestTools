@@ -57,12 +57,10 @@ class EditCategoryFileModule(GridFrame):
         }
     
     def shiftElement(self, rowIdx, colIdx, left):
-        print("column="+str(colIdx)+"\trowIdx="+str(rowIdx)+"\tdir="+("left" if left else "right"))
         srcCompsList = self.newListComps[colIdx][LIST]
         newColIdx = colIdx-1 if left else colIdx+1
         targetFrame = self.newListComps[newColIdx][FRAME]
         targetCompsList = self.newListComps[newColIdx][LIST]
-        print("elements="+str(len(srcCompsList)))
         # if len(targetCompsList) == 0:
         #     self.newListComps[newColIdx][FRAME].grid(row=2,column=colIdx)
         #     print("Col Idx "+str(newColIdx)+"is now visible")
@@ -82,7 +80,6 @@ class EditCategoryFileModule(GridFrame):
         
     def updateUnMappedValComp(self, newRowIdx, colIdx, srcCompsList):
         comps=srcCompsList[newRowIdx]
-        print("fix-"+comps[VAR].get()+"- with new IDX "+str(newRowIdx))
         frame = comps[FRAME]
         frame.grid(row=newRowIdx)
         comps[SHIFT_LEFT_BUTTON].configure(command=(lambda *args, rI=newRowIdx, cI=colIdx: self.shiftElement(rI,cI,True) if colIdx > 0 else lambda *args: print("Can't move left")))

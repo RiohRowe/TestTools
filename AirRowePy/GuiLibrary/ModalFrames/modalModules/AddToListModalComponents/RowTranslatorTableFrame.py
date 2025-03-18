@@ -148,9 +148,7 @@ class RowTranslatorTableFrame(GridFrame):
         self.render()
     def addMap(self, header):
         emptyRowMap = {}
-        print("HEADER="+header)
         for row in self.getValues():
-            print("ROW="+str(row)+"\trow contains "+header+"="+str(row.keys().__contains__(header)))
             emptyRowMap[row[header]]=""
         fileName = header+"mapFile"
         modal = ModalWrapper(AssignValuesToMapModal, "AddMapModal", elements=emptyRowMap, handleResolveValue=lambda *args, fn=fileName, value={}: self.vMapFM.writeMapToFile(fn, value)),
@@ -223,15 +221,12 @@ class RowTranslatorTableFrame(GridFrame):
 
 
     def selectCategoryType(self, idx):
-        print("selecting category mapping")
         header = self.headerOrder[idx]
         fileName = self.transTableComps[idx][CUSTOM_CATEGORY_MAP_DD][VAR].get()
         # normal
         if fileName == NONE:
-            print("no category map")
             self.categoryMaps[header] == None
         else:
-            print("new translation map file selected:"+fileName)
             self.categoryMaps[header]={
                 FILE_MANAGER:self.cMapFM,
                 FILE_NAME:fileName,
@@ -239,7 +234,6 @@ class RowTranslatorTableFrame(GridFrame):
             }
     def selectTranslationType(self, idx):
         headerName = self.headerOrder[idx]
-        print("selecting translation mapping")
         fileName = self.transTableComps[idx][CUSTOM_VALUE_MAP_DD][VAR].get()
         # normal
         if fileName == NONE:
@@ -497,9 +491,8 @@ class RowTranslatorTableFrame(GridFrame):
         values = []
         for idx, headers in enumerate(self.elements):
             values.append({})
-            print(headers)
             for header in headers.keys():
-                values[idx][header] = headers[header][SAMPLE_IN_TB][VAR].get()
+                values[idx][header] = headers[header][SAMPLE_OUT_LB][VAR].get()
         # print("printValues="+str(values))
         return values
 

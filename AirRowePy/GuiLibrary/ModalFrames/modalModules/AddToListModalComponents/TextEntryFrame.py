@@ -48,8 +48,6 @@ class TextEntryFrame(GridFrame):
 
     def updateHeaders(self):
         dataStr = self.textBox.get(1.0,'end-1c')
-        print("dataStr")
-        print(dataStr)
         if len(dataStr) == 0:
             return
         rows = dataStr.split('\n')

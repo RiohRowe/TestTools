@@ -51,7 +51,6 @@ class AssignValuesToMapModal(GridFrame):
                  grid={"r": 0, "c": 0, "px": 0, "py": 0}) -> None:
         super().__init__(parent, grid=grid)
         self.elements = elements
-        print("elements1=\n"+str(self.elements)+"\n\n")
         self.valueBreakdowns={}
         self.resolve = resolve
         self.strCompUtil = StringCompareUtil()
@@ -67,7 +66,6 @@ class AssignValuesToMapModal(GridFrame):
             self.valueBreakdowns[key] = self.breakdownWord(key)
         else:
             self.valueBreakdowns[key] = self.breakdownWord(self.elements[key])
-        print("updating key"+str(key)+" suggestion using value "+self.formComps[BODY][key][VALUE_TB][VAR].get())
         self.formComps[BODY][key][SUGGESTION_BT][VAR].set(self.makeSuggestion(key))
 
     def getValues(self):
@@ -199,7 +197,6 @@ class AssignValuesToMapModal(GridFrame):
             }
 
             self.valueBreakdowns[key]=self.breakdownWord(key)
-            print("row-"+str(idx)+"- key:("+str(key)+")value:("+str(value)+")")
             entry[KEY_LB][FRAME] = tkinter.Frame(self.tableFrame, background=bgColor1 if idx % 2 == 0 else bgColor2)
             entry[KEY_LB][FRAME].grid(row=idx+1,column=0,padx=0,pady=0,sticky="nsew")
             entry[KEY_LB][VAR]=tkinter.StringVar(value=key)

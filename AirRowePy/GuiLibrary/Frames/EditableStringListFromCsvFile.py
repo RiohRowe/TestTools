@@ -39,9 +39,6 @@ class EditableStringListFromFileComponent(GridFrame):
         self.fm = FileManager(self.fileRootPath)
 
         self.setRange(rangeStart,rangeEnd,rangeSize,listContentLen)
-        print("listContentLen - "+str(listContentLen))
-        print("rangeStart - "+str(self.rangeStart))
-        print("rangeEnd - "+str(self.rangeEnd))
         self.titleFrame = tkinter.Frame(self.frame)
         self.titleFrame.grid(row=0,column=0,padx=10,pady=3)
         self.headerFrame = tkinter.Frame(self.frame)
@@ -99,17 +96,13 @@ class EditableStringListFromFileComponent(GridFrame):
         #update displayed list
         roomNeeded = numberAdded # room needed to properly insert new elements
         newRangeStart = self.rangeStart
-        print("newRangeStart = "+str(newRangeStart))
         newRangeEnd = self.rangeEnd
         # val = number of components to the right of the insert index that can be reused
         val = roomNeeded if prevRightEleLen > roomNeeded else prevRightEleLen-1 # pull from right
-        print("val1="+str(val))
-        print("roomNeeded="+str(roomNeeded)+"\tprevRightEleLen="+str(prevRightEleLen))
         roomNeeded -= val
         if roomNeeded > 0: # if can't pull entirely from the right
             # pull from left
             val = roomNeeded if prevLeftEleLen > roomNeeded else prevLeftEleLen - 1
-            print("val2="+str(val))
             roomNeeded -= val
             newRangeStart += val
             newRangeEnd += val+roomNeeded #Take Excess from right
@@ -118,9 +111,7 @@ class EditableStringListFromFileComponent(GridFrame):
         #preserveLeftComps
         fromIdx = newRangeStart-self.rangeStart
         toIdx = 0
-        print("newRangeStart="+str(newRangeStart)+"\tidx="+str(idx))
         for rIdx in range(newRangeStart, idx):
-            print("from="+str(fromIdx)+"\tto="+str(toIdx))
             temp = self.listComponents[toIdx]
             self.listComponents[toIdx] = self.listComponents[fromIdx]
             self.listComponents[fromIdx] = temp
@@ -131,7 +122,6 @@ class EditableStringListFromFileComponent(GridFrame):
         gridIdx=toIdx
         #alterInsertedComps
         for rIdx in range(idx, idx+remainingComps):
-            print(rIdx)
             self.listComponents[gridIdx].setIndexes(gridIdx=gridIdx, gListIdx=rIdx)
             self.listComponents[gridIdx].updateVals(newContent=self.listContent[rIdx])
             gridIdx+=1
@@ -199,10 +189,7 @@ class EditableStringListFromFileComponent(GridFrame):
                     component = self.listComponents[gridIdx]
                     component.setIndexes(gridIdx=newGridIdx)
                     newGridIdx+=1
-                print(len(newCompArr))
-                print(len(self.listComponents))
                 self.listComponents = newCompArr+self.listComponents
-                print("NEW GRID SIZE ="+str(len(self.listComponents)))
 
                 if self.rangeStart == self.rangeEnd:
                     self.expanderTop.showShrink()

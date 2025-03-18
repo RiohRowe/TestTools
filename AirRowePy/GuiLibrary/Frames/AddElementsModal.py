@@ -44,9 +44,6 @@ class EditableStringListFromFileComponent(GridFrame):
         else:
             self.headers = []
         self.setRange(rangeStart,rangeEnd,rangeSize,listContentLen)
-        print("listContentLen - "+str(listContentLen))
-        print("rangeStart - "+str(self.rangeStart))
-        print("rangeEnd - "+str(self.rangeEnd))
         self.titleFrame = tkinter.Frame(self.frame)
         self.titleFrame.grid(row=0,column=0,padx=10,pady=3)
         self.headerFrame = tkinter.Frame(self.frame)
@@ -73,7 +70,6 @@ class EditableStringListFromFileComponent(GridFrame):
                 self.listComponents.insert(0, component)
                 self.scrollFrameWrapper.children.append(component)
             #fix gid of preexisting elements
-            print(str(amount)+"- -"+str(self.rangeStart)+"-"+str(self.rangeEnd))
             for gridIdx in range(amount, len(self.listComponents), 1):
                 self.listComponents[gridIdx].setIndexes(gridIdx=gridIdx)
             #adjust rangeStart
@@ -194,7 +190,6 @@ class EditableStringListFromFileComponent(GridFrame):
         removedComponent.destroy()
 
     def add(self, insertIndex=-1, newEntry={}):
-        print("BEGIN - start="+str(self.rangeStart)+"\tend="+str(self.rangeEnd)+"\tsize="+str(self.rangeEnd-self.rangeStart+1))
 # INVALID INPUT and BASE CASE
         # print("start="+str(self.rangeStart)+"\tend="+str(self.rangeEnd))
         if insertIndex < self.rangeStart or insertIndex > self.rangeEnd+1:
@@ -215,7 +210,6 @@ class EditableStringListFromFileComponent(GridFrame):
             self.listComponents.append(newComponent)
             self.scrollFrameWrapper.children.append(newComponent)
             self.rangeEnd += 1
-            print("TRIVIAL CASE =========================================================")
             return
 # Determine Add Scenario
         #If start of displayed list is the start of the Master list, it stays that way.
@@ -261,17 +255,12 @@ class EditableStringListFromFileComponent(GridFrame):
             self.listComponents[prevIdx].setIndexes(gridIdx=0, gListIdx=self.rangeStart)
             prevIdx = currIdx
             currIdx += incrament
-            print("Sticky start and shift left, so insert at start")
             self.rangeEnd += 1
         elif stickyEnd and not shiftLeft:
-            print("Sticky end end shift right, so insert at end ("+str(prevIdx)+"/"+str(self.rangeEnd-self.rangeStart)+"/"+str(self.rangeEnd+1)+")")
             self.listComponents[prevIdx].setIndexes(gridIdx=prevIdx+1, gListIdx=self.rangeEnd+1)
             self.listComponents.append(self.listComponents[prevIdx])
             self.rangeEnd += 1
         else:
-            print("Sticky start="+str(stickyStart))
-            print("Sticky end="+str(stickyEnd))
-            print("Destroying index=("+str(prevIdx)+"/"+str(prevIdx + self.rangeStart)+")")
             self.scrollFrameWrapper.children.remove(self.listComponents[prevIdx])
             self.listComponents[prevIdx].destroy()
             # self.listComponents.pop(prevIdx)
@@ -285,19 +274,13 @@ class EditableStringListFromFileComponent(GridFrame):
         # for idx in range(0,len(self.listComponents),1):
         #     print("global list index "+str(self.listComponents[idx].index)+"\t("+str(self.listComponents[idx].content)+")\t-"+str(self.listComponents[idx].frame.grid_info()['row']))
 
-        print(str(self.rangeStart+prevIdx)+"->"+"temp")
         shiftToIdx = compListInsertIdx
-        print("compListInsertIdx="+str(compListInsertIdx)+"\tshiftToIdx="+str(shiftToIdx)+"\tprevIdx="+str(prevIdx))
         while prevIdx != shiftToIdx:
-            print("prevIdx="+str(prevIdx)+"\tshiftToIdx="+str(shiftToIdx))
-            print(str(self.listComponents[currIdx].index)+"->"+str(self.listComponents[prevIdx].index)+"\t"+str(currIdx)+"->"+str(prevIdx))
             self.listComponents[prevIdx] = self.listComponents[currIdx]
             self.listComponents[prevIdx].setIndexes(gridIdx=prevIdx, gListIdx=self.rangeStart+prevIdx if shiftLeft else self.rangeStart+prevIdx)
             prevIdx = currIdx
             currIdx += incrament
-        print("prevIdx="+str(prevIdx)+"\tshiftToIdx="+str(shiftToIdx))
         self.listComponents[compListInsertIdx] = newComponent
-        print("new"+"->"+str(self.rangeStart+compListInsertIdx))
         newComponent.setIndexes(gridIdx=compListInsertIdx)
         self.scrollFrameWrapper.children.append(newComponent)
         self.listContent[insertIndex] = newEntry

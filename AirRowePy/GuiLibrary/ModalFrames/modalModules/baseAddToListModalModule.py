@@ -45,7 +45,6 @@ class BaseAddElementsModalModule(GridFrame):
         self.headerSelectorDropDown.grid(gridInfo)
         
     def addMap(self):
-        print("HEADER = "+self.headerSelectorDropDownVar.get())
         self.rowTranslatorTableFrame.addMap(self.headerSelectorDropDownVar.get())
     def editMap(self):
         self.rowTranslatorTableFrame.editMap(self.fileMapSelectorDropDownVar.get())

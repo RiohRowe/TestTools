@@ -49,7 +49,6 @@ class FileManager:
             myMap = {}
             with open(fullFilePath, 'r') as mapFile:
                 for line in mapFile.read().split(rowDelim):
-                    print("["+line+"]")
                     delimiterIdx = line.index(columnDelim)
                     myMap[line[0:delimiterIdx]] = line[delimiterIdx+1:]
             return myMap
@@ -89,7 +88,6 @@ class FileManager:
                     bodyData.append([])
                 #read in category data
                 for line in lines[1:]:
-                    print("line="+str(line))
                     rowData = line.split(columnDelim)
                     for idx in range(0, numCategories):
                         val = rowData[idx]

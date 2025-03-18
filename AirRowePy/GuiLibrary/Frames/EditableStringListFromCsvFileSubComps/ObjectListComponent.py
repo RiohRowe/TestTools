@@ -106,10 +106,8 @@ class objectListComponent(GridFrame):
                 self.headerComponents.append(self.createComps(idx, header))
             self.headers = headers
     def removeThis(self):
-        print("remove"+str(self.index))
         self.removeComponentFunc(self.index)
     def addHere(self):
-        print("add"+str(self.index))
         self.addComponentFunc(self.index)
     def getHeaderVal(self,headerIdx):
         return self.headerComponents[headerIdx][VAR].get()
