@@ -150,7 +150,7 @@ class RowTranslatorTableFrame(GridFrame):
         emptyRowMap = {}
         print("HEADER="+header)
         for row in self.getValues():
-            print("ROW="+str(row))
+            print("ROW="+str(row)+"\trow contains "+header+"="+str(row.keys().__contains__(header)))
             emptyRowMap[row[header]]=""
         fileName = header+"mapFile"
         modal = ModalWrapper(AssignValuesToMapModal, "AddMapModal", elements=emptyRowMap, handleResolveValue=lambda *args, fn=fileName, value={}: self.vMapFM.writeMapToFile(fn, value)),
