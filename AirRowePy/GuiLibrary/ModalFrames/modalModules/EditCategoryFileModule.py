@@ -87,6 +87,7 @@ class EditCategoryFileModule(GridFrame):
         frame.grid(row=newRowIdx)
         comps[SHIFT_LEFT_BUTTON].configure(command=(lambda *args, rI=newRowIdx, cI=colIdx: self.shiftElement(rI,cI,True) if colIdx > 0 else lambda *args: print("Can't move left")))
         comps[SHIFT_RIGHT_BUTTON].configure(command=(lambda *args, rI=newRowIdx, cI=colIdx: self.shiftElement(rI,cI,False) if colIdx < self.lastHeaderIdx else lambda *args: print("Can't move right")))
+        comps[SHIFT_RIGHT_BUTTON].configure(command=lambda *args, rI=newRowIdx, cI=colIdx: self.commitElement(rI, cI))
         srcCompsList[newRowIdx][FRAME].grid(row=newRowIdx)
         
     def commitElement(self, rowIdx, colIdx):
