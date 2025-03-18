@@ -57,10 +57,12 @@ class EditCategoryFileModule(GridFrame):
         }
     
     def shiftElement(self, rowIdx, colIdx, left):
+        print("column="+str(colIdx)+"\trowIdx="+str(rowIdx)+"\tdir="+("left" if left else "right"))
         srcCompsList = self.newListComps[colIdx][LIST]
         newColIdx = colIdx-1 if left else colIdx+1
         targetFrame = self.newListComps[newColIdx][FRAME]
         targetCompsList = self.newListComps[newColIdx][LIST]
+        print("elements="+str(len(srcCompsList)))
         # if len(targetCompsList) == 0:
         #     self.newListComps[newColIdx][FRAME].grid(row=2,column=colIdx)
         #     print("Col Idx "+str(newColIdx)+"is now visible")
@@ -73,10 +75,19 @@ class EditCategoryFileModule(GridFrame):
         comps[FRAME].destroy()
         #adjust grid spacing on old list
         for idx in range(rowIdx, len(srcCompsList)):
-            srcCompsList[idx][FRAME].grid(row=idx)
+            self.updateUnMappedValComp(idx,colIdx,srcCompsList)
         # if len(srcCompsList) == 0:
         #     self.newListComps[colIdx][FRAME].grid_forget()
         #     print("Col Idx "+str(colIdx)+"is now invisible")
+        
+    def updateUnMappedValComp(self, newRowIdx, colIdx, srcCompsList):
+        comps=srcCompsList[newRowIdx]
+        print("fix-"+comps[VAR].get()+"- with new IDX "+str(newRowIdx))
+        frame = comps[FRAME]
+        frame.grid(row=newRowIdx)
+        comps[SHIFT_LEFT_BUTTON].configure(command=(lambda *args, rI=newRowIdx, cI=colIdx: self.shiftElement(rI,cI,True) if colIdx > 0 else lambda *args: print("Can't move left")))
+        comps[SHIFT_RIGHT_BUTTON].configure(command=(lambda *args, rI=newRowIdx, cI=colIdx: self.shiftElement(rI,cI,False) if colIdx < self.lastHeaderIdx else lambda *args: print("Can't move right")))
+        srcCompsList[newRowIdx][FRAME].grid(row=newRowIdx)
         
     def commitElement(self, rowIdx, colIdx):
         srcCompsList = self.newListComps[colIdx][LIST]
