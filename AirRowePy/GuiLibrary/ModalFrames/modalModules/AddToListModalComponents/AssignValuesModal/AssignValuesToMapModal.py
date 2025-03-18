@@ -162,7 +162,7 @@ class AssignValuesToMapModal(GridFrame):
         return rankedSuggestions[0][ORIGINAL]
     def render(self):
         self.tableScrollOuterFrame = tkinter.Frame(self.frame)
-        self.tableScroll = ScrollPackFrame(self.tableScrollOuterFrame,height=500, width=400)
+        self.tableScroll = ScrollPackFrame(self.tableScrollOuterFrame,height=500, width=500)
         self.tableFrame = self.tableScroll.getInnerFrame()
         self.tableScrollOuterFrame.grid(row=0, column=0, padx=0, pady=0, sticky="nsew")
         self.suggestionsFrame = tkinter.Frame(self.frame)

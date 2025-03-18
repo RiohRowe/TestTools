@@ -85,15 +85,14 @@ class TextEntryFrame(GridFrame):
         self.elements = []
         dataStr = self.textBox.get(1.0,'end-1c')
         for idx, row in enumerate(dataStr.split('\n')):
-            self.elements.append({})
-            print("row-"+row)
-            vals=row.split('\t')
-            print("/|\\".join(vals))
-            for hidx, column in enumerate(vals):
-                self.elements[idx][self.headerEntries[hidx].get()] = {
-                    "type":"t",
-                    "editable":True,
-                    "defaultValue":column}
+            if not row == "":
+                self.elements.append({})
+                vals=row.split('\t')
+                for hidx, column in enumerate(vals):
+                    self.elements[idx][self.headerEntries[hidx].get()] = {
+                        "type":"t",
+                        "editable":True,
+                        "defaultValue":column}
         self.handleData(self.elements)
 
 
