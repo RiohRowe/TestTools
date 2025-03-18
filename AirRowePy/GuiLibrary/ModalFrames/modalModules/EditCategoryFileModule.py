@@ -101,7 +101,7 @@ class EditCategoryFileModule(GridFrame):
         comps[FRAME].destroy()
         #adjust grid spacing on old list
         for idx in range(rowIdx, len(srcCompsList)):
-            srcCompsList[idx][FRAME].grid(row=idx)
+            self.updateUnMappedValComp(idx,colIdx,srcCompsList)
         # if len(srcCompsList) == 0:
         #     self.newListComps[colIdx][FRAME].grid_forget()
         #     print("Col Idx "+str(colIdx)+"is now invisible")
