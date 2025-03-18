@@ -161,8 +161,10 @@ class AssignValuesToMapModal(GridFrame):
             return self.breakdownWord(default)[ORIGINAL]
         return rankedSuggestions[0][ORIGINAL]
     def render(self):
-        self.tableFrame = tkinter.Frame(self.frame)
-        self.tableFrame.grid(row=1, column=0, padx=0, pady=0, sticky="nsew")
+        self.tableScrollOuterFrame = tkinter.Frame(self.frame)
+        self.tableScroll = ScrollPackFrame(self.tableScrollOuterFrame,height=500, width=400)
+        self.tableFrame = self.tableScroll.getInnerFrame()
+        self.tableScrollOuterFrame.grid(row=0, column=0, padx=0, pady=0, sticky="nsew")
         self.suggestionsFrame = tkinter.Frame(self.frame)
         self.suggestionsFrame.grid(row=0,column=1,padx=0,pady=0,sticky="nsew")
         #labels
@@ -221,7 +223,7 @@ class AssignValuesToMapModal(GridFrame):
 
         self.formComps[BUTTONS]={}
         self.formComps[BUTTONS][RESOLVE_BT]=tkinter.Button(self.frame, text="RESOLVE", command=self.resolve)
-        self.formComps[BUTTONS][RESOLVE_BT].grid(row=0,column=0,padx=0,pady=0,sticky="nsew",columnspan=2)
+        self.formComps[BUTTONS][RESOLVE_BT].grid(row=1,column=0,padx=0,pady=0,sticky="nsew",columnspan=2)
 
         #Setup suggestions
         self.suggestionComps = {
