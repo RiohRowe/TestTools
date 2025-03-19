@@ -147,13 +147,20 @@ class RowTranslatorTableFrame(GridFrame):
         self.cMapFM = FileManager(FileManager.CATEGORY_FILES_PATH)
         self.render()
     def addMap(self, header):
+        if not header:
+            return
         emptyRowMap = {}
         for row in self.getValues():
             emptyRowMap[row[header]]=""
         fileName = header+"mapFile"
         modal = ModalWrapper(AssignValuesToMapModal, "AddMapModal", elements=emptyRowMap, handleResolveValue=lambda *args, fn=fileName, value={}: self.vMapFM.writeMapToFile(fn, value)),
-    def editMap(self,fileName):
+    def editMap(self,fileName,header):
         rowMap = self.vMapFM.readFileToMap(fileName)
+        #Add unHandled vals
+        if header:
+            for row in self.getValues():
+                if not rowMap.__contains__(row[header]):
+                    rowMap[row[header]]=""
         modal = ModalWrapper(AssignValuesToMapModal, "EditMapModal", elements=rowMap, handleResolveValue=lambda *args, fn=fileName, value={}: self.vMapFM.writeMapToFile(fn, value)),
 
     def updateTransitions(self, header, parserStr=None, builderStr=None):

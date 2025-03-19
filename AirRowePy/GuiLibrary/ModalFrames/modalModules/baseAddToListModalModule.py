@@ -47,7 +47,7 @@ class BaseAddElementsModalModule(GridFrame):
     def addMap(self):
         self.rowTranslatorTableFrame.addMap(self.headerSelectorDropDownVar.get())
     def editMap(self):
-        self.rowTranslatorTableFrame.editMap(self.fileMapSelectorDropDownVar.get())
+        self.rowTranslatorTableFrame.editMap(self.fileMapSelectorDropDownVar.get(), self.headerSelectorDropDownVar.get())
     def render(self):
         self.rowTranslatorTableFrame = RowTranslatorTableFrame(self.frame, self.elements[0:5], len(self.elements), self.resolve, self.updateHeaders, grid={"r":0, "c":0, "px":0, "py":0})
         self.rowTranslatorTableFrame.frame.grid_configure(rowspan=2)
@@ -57,8 +57,8 @@ class BaseAddElementsModalModule(GridFrame):
         self.fileMapSelectorDropDownVar = tkinter.StringVar(value=firstOption)
         self.fileMapSelectorDropDown = tkinter.ttk.OptionMenu(self.frame, self.fileMapSelectorDropDownVar, firstOption,*options)
         self.fileMapSelectorDropDown.grid(row=0,column=4,padx=0,pady=0,sticky="nsew")
-        self.headerSelectorDropDownVar = tkinter.StringVar(value=self.headerOrder[0])
-        self.headerSelectorDropDown = tkinter.ttk.OptionMenu(self.frame, self.headerSelectorDropDownVar, self.headerOrder[0],*self.headerOrder)
+        self.headerSelectorDropDownVar = tkinter.StringVar(value=None)
+        self.headerSelectorDropDown = tkinter.ttk.OptionMenu(self.frame, self.headerSelectorDropDownVar, self.headerOrder[0],*[None, *self.headerOrder])
         self.headerSelectorDropDown.grid(row=0,column=2,padx=0,pady=0,sticky="nsew")
         self.addMappingFileButton = tkinter.Button(self.frame, text="newMapFile", command=self.addMap)
         self.addMappingFileButton.grid(row=0,column=1,padx=0,pady=0,sticky="nsew")
